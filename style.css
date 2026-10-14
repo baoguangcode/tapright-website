@@ -85,3 +85,4 @@ nav a:hover{color:var(--accent)}
 .doc h2{font-size:1.4rem;margin:36px 0 8px;color:var(--accent)}
 .doc ul{padding-left:22px}
 .doc .note{background:var(--beige);border-left:4px solid var(--accent);padding:2px 18px;border-radius:8px}
+.story-text ul{margin:0 0 18px;padding-left:22px;max-width:640px}.story-text li{margin-bottom:10px}
