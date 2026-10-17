@@ -1,0 +1,7755 @@
+{
+ "schema": 1,
+ "dataVersion": 1,
+ "publishedAt": "2026-10-17T00:00:00Z",
+ "checksum": "sha256:6931900c710f6198e7db0862e3b3a9a487a0cbfe00cecf00ae9a156dee5256a9",
+ "data": {
+  "pointPrograms": {
+   "membershipRewards": {
+    "name": "Amex Membership Rewards",
+    "earnedOn": "Earned on Amex Gold, Green, Platinum and Cobalt cards",
+    "defaultCents": 1
+   },
+   "aeroplan": {
+    "name": "Air Canada Aeroplan",
+    "earnedOn": "Earned on Amex, TD and CIBC Aeroplan cards",
+    "defaultCents": 1
+   },
+   "marriottBonvoy": {
+    "name": "Marriott Bonvoy",
+    "earnedOn": "Earned on the Amex Marriott Bonvoy card",
+    "defaultCents": 0.7
+   },
+   "pcOptimum": {
+    "name": "PC Optimum",
+    "earnedOn": "Earned on PC Financial Mastercards",
+    "defaultCents": 0.1
+   },
+   "scenePlus": {
+    "name": "Scene+",
+    "earnedOn": "Earned on Scotiabank Scene+, Passport, Gold Amex and Platinum Amex cards, and Tangerine World Elite",
+    "defaultCents": 1
+   },
+   "tdRewards": {
+    "name": "TD Rewards",
+    "earnedOn": "Earned on TD Rewards Visa and TD First Class Travel Visa Infinite",
+    "defaultCents": 0.5
+   },
+   "avionElite": {
+    "name": "RBC Avion Elite",
+    "earnedOn": "Earned on RBC Avion cards",
+    "defaultCents": 1
+   },
+   "avionPremium": {
+    "name": "RBC Avion Premium",
+    "earnedOn": "Earned on RBC ION cards and RBC Visa Platinum",
+    "defaultCents": 0.58
+   },
+   "aventura": {
+    "name": "CIBC Aventura",
+    "earnedOn": "Earned on CIBC Aventura cards",
+    "defaultCents": 1
+   },
+   "bmoRewards": {
+    "name": "BMO Rewards",
+    "earnedOn": "Earned on BMO eclipse and Ascend cards",
+    "defaultCents": 0.67
+   },
+   "blueRewards": {
+    "name": "BMO Blue Rewards",
+    "earnedOn": "Earned on BMO Blue Rewards cards",
+    "defaultCents": 0.67
+   },
+   "viporter": {
+    "name": "BMO VIPorter",
+    "earnedOn": "Earned on BMO VIPorter cards",
+    "defaultCents": 1,
+    "assumption": "Assumption, not an official value. BMO's average flight value is about 1.5¢; raise this if you fly Porter often"
+   },
+   "alaCarte": {
+    "name": "National Bank À la carte",
+    "earnedOn": "Earned on the National Bank World Elite Mastercard",
+    "defaultCents": 0.9,
+    "assumption": "Assumption, not an official value"
+   },
+   "mbnaRewards": {
+    "name": "MBNA Rewards",
+    "earnedOn": "Earned on the MBNA Rewards World Elite Mastercard",
+    "defaultCents": 0.83,
+    "assumption": "Assumption, not an official value"
+   },
+   "walmartRewardDollars": {
+    "name": "Walmart Reward Dollars",
+    "earnedOn": "Earned on Walmart Rewards cards",
+    "defaultCents": 1,
+    "assumption": "Assumption, not an official value",
+    "note": "Only spendable at Walmart"
+   }
+  },
+  "conditionLabels": {
+   "service": {
+    "label": "With a Rogers service",
+    "short": "Rogers service"
+   },
+   "prime": {
+    "label": "Amazon Prime members",
+    "short": "Prime"
+   },
+   "savings": {
+    "label": "With a Tangerine Savings Account",
+    "short": "Savings account"
+   }
+  },
+  "cards": {
+   "simpliiVisa": {
+    "network": "Visa",
+    "foreignTransactionFee": 2.5,
+    "name": "Simplii Visa",
+    "issuer": "Simplii Financial",
+    "color": "#1a1c1a",
+    "textColor": "#aaee44",
+    "baseRates": [
+     {
+      "earn": {
+       "percent": 0.5
+      }
+     }
+    ],
+    "fee": "$0",
+    "rateNote": "Rates from Simplii Financial (official, simplii.com), Oct 2026. The 4% on restaurants is the regular rate, not a promotion.",
+    "lastChecked": "2026-10-14",
+    "sourceUrl": "https://www.simplii.com/en/credit-cards/cash-back-visa.html"
+   },
+   "cibcDividendVI": {
+    "network": "Visa",
+    "foreignTransactionFee": 2.5,
+    "name": "CIBC Dividend Visa Infinite",
+    "issuer": "CIBC",
+    "color": "#1c1c1c",
+    "tier": "INFINITE",
+    "baseRates": [
+     {
+      "earn": {
+       "percent": 1
+      }
+     }
+    ],
+    "fee": "$120",
+    "rateNote": "Annual fee rebated in the first year",
+    "lastChecked": "2026-10-04",
+    "sourceUrl": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/dividend-visa-infinite-card.html"
+   },
+   "triangleWEMC": {
+    "network": "Mastercard",
+    "foreignTransactionFee": 2.5,
+    "name": "Triangle World Elite Mastercard",
+    "issuer": "Canadian Tire Bank",
+    "color": "#0e0e0e",
+    "tier": "WORLD ELITE",
+    "baseRates": [
+     {
+      "earn": {
+       "percent": 1
+      },
+      "note": "CT Money"
+     }
+    ],
+    "fee": "$0",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://triangle.canadiantire.ca/en/credit-cards/triangle-world-elite-mastercard.html"
+   },
+   "cibcCostcoMC": {
+    "network": "Mastercard",
+    "foreignTransactionFee": 2.5,
+    "name": "CIBC Costco Mastercard",
+    "issuer": "CIBC",
+    "color": "#232323",
+    "pattern": "lines",
+    "aliases": [
+     "CIBC Costco World Mastercard"
+    ],
+    "baseRates": [
+     {
+      "earn": {
+       "percent": 1
+      },
+      "note": "Includes Costco warehouse"
+     }
+    ],
+    "fee": "$0",
+    "payoutNote": "Paid yearly as a Costco gift certificate",
+    "rateNote": "Rates from CIBC (official, cibc.com), Oct 2026",
+    "lastChecked": "2026-10-14",
+    "sourceUrl": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/costco-mastercard.html"
+   },
+   "tdVisaInfinite": {
+    "network": "Visa",
+    "foreignTransactionFee": 2.5,
+    "name": "TD Cash Back Visa Infinite",
+    "issuer": "TD",
+    "color": "#2a2a2c",
+    "tier": "INFINITE",
+    "baseRates": [
+     {
+      "earn": {
+       "percent": 1
+      }
+     }
+    ],
+    "fee": "$139",
+    "lastChecked": "2026-10-05",
+    "sourceUrl": "https://www.td.com/ca/en/personal-banking/products/credit-cards/cash-back/cash-back-visa-infinite-card"
+   },
+   "amexGold": {
+    "network": "Amex",
+    "foreignTransactionFee": 2.5,
+    "name": "Amex Gold",
+    "issuer": "American Express",
+    "color": "#c9a84c",
+    "finish": "metal",
+    "tier": "GOLD",
+    "textColor": "#1e1200",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "membershipRewards"
+      },
+      "note": "MR points"
+     }
+    ],
+    "fee": "$250/yr",
+    "rateNote": "First additional card free, then $50",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.americanexpress.com/en-ca/credit-cards/gold-rewards-card/"
+   },
+   "rbcCashBackMC": {
+    "network": "Mastercard",
+    "foreignTransactionFee": 2.5,
+    "name": "RBC Cash Back Mastercard",
+    "issuer": "RBC",
+    "color": "#7a8fa0",
+    "baseRates": [
+     {
+      "earn": {
+       "percent": 0.5
+      }
+     }
+    ],
+    "fee": "$0",
+    "lastChecked": "2026-10-05",
+    "sourceUrl": "https://www.rbcroyalbank.com/credit-cards/cash-back/rbc-cashback-mastercard.html"
+   },
+   "rogersWEMC": {
+    "network": "Mastercard",
+    "foreignTransactionFee": 2.5,
+    "name": "Rogers Red World Elite Mastercard",
+    "issuer": "Rogers Bank",
+    "color": "#cc2222",
+    "tier": "WORLD ELITE",
+    "baseRates": [
+     {
+      "earn": {
+       "percent": 1.5
+      }
+     },
+     {
+      "earn": {
+       "percent": 2
+      },
+      "requires": "service"
+     }
+    ],
+    "conditions": {
+     "service": "I have a qualifying Rogers, Fido, Shaw or Comwave service"
+    },
+    "fee": "$0",
+    "rateNote": "Income $80,000 personal / $150,000 household. The 2% and 3% rates apply to the first $61,000 spent per account year, then 1.5%. The 1.5x redemption bonus ends Nov 18, 2026, including for transactions posted before that date",
+    "lastChecked": "2026-10-10",
+    "sourceUrl": "https://www.rogersbank.com"
+   },
+   "rogersRedMC": {
+    "network": "Mastercard",
+    "foreignTransactionFee": 2.5,
+    "name": "Rogers Red Mastercard",
+    "issuer": "Rogers Bank",
+    "color": "#d93a3a",
+    "pattern": "lines",
+    "baseRates": [
+     {
+      "earn": {
+       "percent": 1
+      }
+     },
+     {
+      "earn": {
+       "percent": 2
+      },
+      "requires": "service"
+     }
+    ],
+    "conditions": {
+     "service": "I have a qualifying Rogers, Fido, Shaw or Comwave service"
+    },
+    "fee": "$0",
+    "rateNote": "No annual fee for authorized users either ($0). The 2% rate applies to the first $16,000 spent per account year, then 1%",
+    "lastChecked": "2026-10-10",
+    "sourceUrl": "https://www.rogersbank.com"
+   },
+   "rogersRedWorldMC": {
+    "network": "Mastercard",
+    "foreignTransactionFee": 2.5,
+    "name": "Rogers Red World Mastercard",
+    "issuer": "Rogers Bank",
+    "color": "#a81b1b",
+    "tier": "WORLD",
+    "pattern": "grid",
+    "baseRates": [
+     {
+      "earn": {
+       "percent": 1
+      }
+     },
+     {
+      "earn": {
+       "percent": 2
+      },
+      "requires": "service"
+     }
+    ],
+    "conditions": {
+     "service": "I have a qualifying Rogers, Fido, Shaw or Comwave service"
+    },
+    "fee": "$0",
+    "rateNote": "Income $50,000 personal / $80,000 household. The 2% rate applies to the first $26,000 spent per account year, then 1%",
+    "lastChecked": "2026-10-10",
+    "sourceUrl": "https://www.rogersbank.com"
+   },
+   "rogersRedWorldLegendMC": {
+    "network": "Mastercard",
+    "foreignTransactionFee": 0,
+    "name": "Rogers Red World Legend Mastercard",
+    "issuer": "Rogers Bank",
+    "color": "#17171b",
+    "textColor": "#d9dce1",
+    "finish": "metal",
+    "tier": "WORLD LEGEND",
+    "pattern": "dots",
+    "baseRates": [
+     {
+      "earn": {
+       "percent": 1.5
+      }
+     },
+     {
+      "earn": {
+       "percent": 2
+      },
+      "requires": "service"
+     }
+    ],
+    "conditions": {
+     "service": "I have a qualifying Rogers, Fido, Shaw or Comwave service"
+    },
+    "fee": "$495/yr ($95 per authorized user)",
+    "rateNote": "Annual limit: Not confirmed",
+    "lastChecked": "2026-10-10",
+    "sourceUrl": "https://www.rogersbank.com"
+   },
+   "amexCobalt": {
+    "name": "Amex Cobalt",
+    "issuer": "American Express",
+    "network": "Amex",
+    "foreignTransactionFee": 2.5,
+    "color": "#1f3b63",
+    "pattern": "lines",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "membershipRewards"
+      },
+      "note": "MR points"
+     }
+    ],
+    "fee": "$15.99/month",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.americanexpress.com/en-ca/credit-cards/cobalt-card/"
+   },
+   "pcWEMC": {
+    "name": "PC World Elite Mastercard",
+    "issuer": "PC Financial",
+    "network": "Mastercard",
+    "foreignTransactionFee": 2.5,
+    "color": "#d9001b",
+    "tier": "WORLD ELITE",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 10,
+       "program": "pcOptimum"
+      },
+      "note": "PC Optimum points"
+     }
+    ],
+    "fee": "$0",
+    "rateNote": "Not modeled: Joe Fresh at 3% back in points",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.pcfinancial.ca/en/credit-cards/pc-mastercard/"
+   },
+   "tangerineMC": {
+    "name": "Tangerine Money-Back Credit Card",
+    "issuer": "Tangerine",
+    "network": "Mastercard",
+    "foreignTransactionFee": 2.5,
+    "color": "#f58220",
+    "textColor": "#1e1000",
+    "baseRates": [
+     {
+      "earn": {
+       "percent": 0.5
+      }
+     }
+    ],
+    "conditions": {
+     "savings": "I deposit my rewards into a Tangerine Savings Account"
+    },
+    "choice": {
+     "question": "Pick the categories that earn 2%",
+     "options": {
+      "groceries": "Groceries",
+      "gas": "Gas",
+      "dining": "Dining",
+      "recurring-bills": "Recurring bills",
+      "drugstores": "Drugstores",
+      "transit": "Transit",
+      "entertainment": "Entertainment",
+      "gaming": "E-games (digital gaming)",
+      "abroad": "Foreign currency spend (outside Canada)",
+      "home-hardware": "Home improvement (Home Hardware)"
+     },
+     "limit": 2,
+     "limitWith": {
+      "condition": "savings",
+      "limit": 3
+     }
+    },
+    "fee": "$0",
+    "rateNote": "Not modeled: Furniture, Hotel-Motel, Fitness category choices",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.tangerine.ca/en/personal/spend/credit-cards/money-back-credit-card"
+   },
+   "tangerineWorldMC": {
+    "name": "Tangerine Money-Back World Mastercard",
+    "issuer": "Tangerine",
+    "network": "Mastercard",
+    "foreignTransactionFee": 2.5,
+    "color": "#c2570a",
+    "textColor": "#ffffff",
+    "pattern": "dots",
+    "baseRates": [
+     {
+      "earn": {
+       "percent": 0.5
+      }
+     }
+    ],
+    "conditions": {
+     "savings": "I deposit my rewards into a Tangerine Savings Account"
+    },
+    "choice": {
+     "question": "Pick the categories that earn 2%",
+     "options": {
+      "groceries": "Groceries",
+      "gas": "Gas",
+      "dining": "Dining",
+      "recurring-bills": "Recurring bills",
+      "drugstores": "Drugstores",
+      "transit": "Transit",
+      "entertainment": "Entertainment",
+      "gaming": "E-games (digital gaming)",
+      "abroad": "Foreign currency spend (outside Canada)",
+      "home-hardware": "Home improvement (Home Hardware)"
+     },
+     "limit": 2,
+     "limitWith": {
+      "condition": "savings",
+      "limit": 3
+     }
+    },
+    "fee": "$0",
+    "rateNote": "Needs $50,000 income, $80,000 household income or $250,000 with Tangerine. Not modeled: Furniture, Hotel-Motel, Fitness category choices, Shell fuel savings",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.tangerine.ca/en/personal/spend/credit-cards/world-credit-card"
+   },
+   "tangerineWE": {
+    "name": "Tangerine Rewards World Elite Mastercard",
+    "issuer": "Tangerine",
+    "network": "Mastercard",
+    "foreignTransactionFee": 2.5,
+    "color": "#1c1c20",
+    "textColor": "#ff9a3c",
+    "tier": "WORLD ELITE",
+    "pattern": "lines",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "scenePlus"
+      },
+      "note": "Scene+ points"
+     }
+    ],
+    "choice": {
+     "question": "Pick the categories that earn 1.5 points",
+     "options": {
+      "groceries": "Groceries",
+      "gas": "Gas",
+      "dining": "Dining",
+      "recurring-bills": "Recurring bills",
+      "drugstores": "Drugstores",
+      "transit": "Transit",
+      "entertainment": "Entertainment",
+      "gaming": "E-games (digital gaming)",
+      "abroad": "Foreign currency spend (outside Canada)",
+      "home-hardware": "Home improvement (Home Hardware)"
+     },
+     "limit": 3
+    },
+    "fee": "$120/yr",
+    "rateNote": "Needs $80,000 income, $150,000 household income or $400,000 with Tangerine; $30 per authorized user. Foreign fee not stated on page. Not modeled: Furniture, Hotel-Motel, Fitness category choices, Shell fuel savings",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.tangerine.ca/en/personal/spend/credit-cards/world-elite-mastercard"
+   },
+   "pcInsidersWE": {
+    "name": "PC Insiders World Elite Mastercard",
+    "issuer": "PC Financial",
+    "network": "Mastercard",
+    "foreignTransactionFee": 2.5,
+    "color": "#2b0a0f",
+    "textColor": "#ffb3bd",
+    "tier": "WORLD ELITE",
+    "pattern": "grid",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 10,
+       "program": "pcOptimum"
+      },
+      "note": "PC Optimum points"
+     }
+    ],
+    "fee": "$120/yr, first year waived",
+    "rateNote": "Income $80,000 personal / $150,000 household. Foreign fee: Not confirmed. Not modeled: Joe Fresh at 4% back in points, 20 extra points per $1 on grocery pickup orders, PC Express Pass",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.pcfinancial.ca/en/credit-cards/insiders/"
+   },
+   "desjardinsOdysseyWE": {
+    "name": "Desjardins Odyssey World Elite Mastercard",
+    "issuer": "Desjardins",
+    "network": "Mastercard",
+    "foreignTransactionFee": 2.5,
+    "color": "#0b3d5c",
+    "textColor": "#bfe8ff",
+    "tier": "WORLD ELITE",
+    "pattern": "waves",
+    "baseRates": [
+     {
+      "earn": {
+       "percent": 1
+      }
+     }
+    ],
+    "fee": "$130/yr",
+    "rateNote": "Income $80,000 personal / $150,000 household. Additional card $40/yr. Foreign fee: Not confirmed",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.desjardins.com/en/credit-cards/odyssey-world-elite-mastercard.html"
+   },
+   "desjardinsOdysseyVIP": {
+    "name": "Desjardins Odyssey Visa Infinite Privilege",
+    "issuer": "Desjardins",
+    "network": "Visa",
+    "foreignTransactionFee": 2.5,
+    "color": "#17171a",
+    "textColor": "#d6b36a",
+    "finish": "metal",
+    "tier": "PRIVILEGE",
+    "pattern": "grid",
+    "baseRates": [
+     {
+      "earn": {
+       "percent": 1.5
+      }
+     }
+    ],
+    "fee": "$295/yr for Desjardins members, $395/yr for non-members",
+    "rateNote": "Income $150,000 personal / $200,000 household. Additional card $95/yr. Foreign fee: Not confirmed",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.desjardins.com/en/credit-cards/odyssey-visa-infinite-privilege.html"
+   },
+   "nbSyncro": {
+    "name": "National Bank Syncro Mastercard",
+    "issuer": "National Bank",
+    "network": "Mastercard",
+    "foreignTransactionFee": 2.5,
+    "color": "#5b6b7a",
+    "pattern": "lines",
+    "baseRates": [
+     {
+      "earn": {
+       "percent": 0
+      },
+      "note": "No rewards"
+     }
+    ],
+    "fee": "not confirmed",
+    "rateNote": "Low-interest card with no rewards (prime + 4%, minimum 8.90%). Annual fee not shown on the page. Foreign fee: Not confirmed",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.nbc.ca/personal/mastercard-credit-cards/syncro.html"
+   },
+   "nbEcho": {
+    "name": "National Bank ECHO Cashback Mastercard",
+    "issuer": "National Bank",
+    "network": "Mastercard",
+    "foreignTransactionFee": 2.5,
+    "color": "#ef7d8a",
+    "textColor": "#3a0008",
+    "pattern": "dots",
+    "baseRates": [
+     {
+      "earn": {
+       "percent": 1
+      }
+     }
+    ],
+    "fee": "$30/yr",
+    "rateNote": "Fee appears only in the page summary; confirm. 0.5% extra applies to the first $25,000 a year of gas, grocery and online purchases combined. Not modeled: online purchases. Foreign fee: Not confirmed",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.nbc.ca/personal/mastercard-credit-cards/echo.html"
+   },
+   "mbnaSmartCash": {
+    "name": "MBNA Smart Cash Platinum Plus Mastercard",
+    "issuer": "MBNA",
+    "network": "Mastercard",
+    "foreignTransactionFee": 2.5,
+    "color": "#2d8f5b",
+    "pattern": "dots",
+    "baseRates": [
+     {
+      "earn": {
+       "percent": 0.5
+      }
+     }
+    ],
+    "fee": "$0",
+    "rateNote": "Not modeled: welcome offer of 5% on gas and groceries for 6 months. Foreign fee: Not confirmed",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.mbna.ca/en/credit-cards/cash-back/smart-cash-mastercard"
+   },
+   "mbnaAmazon": {
+    "name": "Amazon.ca Rewards Mastercard",
+    "issuer": "MBNA",
+    "network": "Mastercard",
+    "foreignTransactionFee": 2.5,
+    "color": "#ff9900",
+    "textColor": "#1a1200",
+    "pattern": "waves",
+    "baseRates": [
+     {
+      "earn": {
+       "percent": 1
+      }
+     }
+    ],
+    "conditions": {
+     "prime": "I have an Amazon Prime membership"
+    },
+    "fee": "$0",
+    "rateNote": "Rewards are spent at Amazon.ca. Includes Whole Foods Market stores in Canada. Not modeled: welcome offer of 5%. Foreign fee: Not confirmed (Prime members get 2.5% back, others 1%, on foreign currency purchases)",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.mbna.ca/en/credit-cards/retail-store/amazon-rewards-mastercard"
+   },
+   "scotiaVI": {
+    "name": "Scotia Momentum Visa Infinite+",
+    "issuer": "Scotiabank",
+    "network": "Visa",
+    "foreignTransactionFee": 2.5,
+    "color": "#b5121b",
+    "tier": "INFINITE",
+    "baseRates": [
+     {
+      "earn": {
+       "percent": 1
+      }
+     }
+    ],
+    "fee": "$120/yr",
+    "rateNote": "First year waived. From Oct 22, 2026, rent and tax payments no longer count as recurring bills",
+    "lastChecked": "2026-10-10",
+    "sourceUrl": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/momentum-infinite-card.html"
+   },
+   "bmoCashBackWE": {
+    "name": "BMO CashBack World Elite Mastercard",
+    "issuer": "BMO",
+    "network": "Mastercard",
+    "foreignTransactionFee": 2.5,
+    "color": "#0079c1",
+    "tier": "WORLD ELITE",
+    "baseRates": [
+     {
+      "earn": {
+       "percent": 1
+      }
+     }
+    ],
+    "fee": "$139/yr",
+    "rateNote": "First year waived · Rebated yearly with BMO Premium Chequing",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.bmo.com/main/personal/credit-cards/bmo-cashback-world-elite-mastercard/"
+   },
+   "wsVisaInfinitePlus": {
+    "name": "Wealthsimple Visa Infinite+",
+    "issuer": "Wealthsimple",
+    "network": "Visa",
+    "foreignTransactionFee": 0,
+    "color": "#1d1d1f",
+    "tier": "INFINITE",
+    "baseRates": [
+     {
+      "earn": {
+       "percent": 2
+      }
+     }
+    ],
+    "payoutNote": "Cash back paid to a Wealthsimple account",
+    "fee": "$20/month ($240/yr; billed yearly in Quebec), waived with $100,000+ in assets or a qualifying paycheque deposit",
+    "rateNote": "Not modeled: boosted cash back from partner offers",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.wealthsimple.com/en-ca/wealthsimple-visa-infinite-card"
+   },
+   "wsVisaInfinitePrivilege": {
+    "name": "Wealthsimple Visa Infinite Privilege",
+    "issuer": "Wealthsimple",
+    "network": "Visa",
+    "foreignTransactionFee": 0,
+    "color": "#0b0b0c",
+    "finish": "metal",
+    "tier": "INFINITE",
+    "pattern": "lines",
+    "textColor": "#d4af37",
+    "baseRates": [
+     {
+      "earn": {
+       "percent": 2
+      }
+     }
+    ],
+    "payoutNote": "Cash back paid to a Wealthsimple account",
+    "fee": "$20/month ($240/yr; billed yearly in Quebec), waived with $100,000+ in assets or a qualifying paycheque deposit",
+    "rateNote": "Not modeled: boosted cash back from partner offers",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.wealthsimple.com/en-ca/wealthsimple-visa-infinite-privilege-card"
+   },
+   "wsVisaInfinite1": {
+    "name": "Wealthsimple Visa Infinite 1%",
+    "issuer": "Wealthsimple",
+    "network": "Visa",
+    "foreignTransactionFee": 0,
+    "color": "#f2efe9",
+    "tier": "INFINITE",
+    "pattern": "dots",
+    "textColor": "#1d1d1f",
+    "baseRates": [
+     {
+      "earn": {
+       "percent": 1
+      }
+     }
+    ],
+    "payoutNote": "Cash back paid to a Wealthsimple account",
+    "fee": "$0",
+    "discontinued": true,
+    "rateNote": "Not on wealthsimple.com anymore; rates from review sites and Wealthsimple terms",
+    "lastChecked": "2026-10-04"
+   },
+   "amexSimplyCashPreferred": {
+    "name": "Amex SimplyCash Preferred",
+    "issuer": "American Express",
+    "network": "Amex",
+    "foreignTransactionFee": 2.5,
+    "color": "#b5342b",
+    "pattern": "dots",
+    "baseRates": [
+     {
+      "earn": {
+       "percent": 2
+      }
+     }
+    ],
+    "fee": "$9.99/month",
+    "rateNote": "Quebec residents: $119/year. Not modeled: Instacart credits up to $60/yr",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.americanexpress.com/en-ca/credit-cards/simply-cash-preferred-card/"
+   },
+   "amexSimplyCash": {
+    "name": "Amex SimplyCash",
+    "issuer": "American Express",
+    "network": "Amex",
+    "foreignTransactionFee": 2.5,
+    "color": "#c9c9cc",
+    "pattern": "grid",
+    "textColor": "#1a1a1a",
+    "baseRates": [
+     {
+      "earn": {
+       "percent": 1.25
+      }
+     }
+    ],
+    "fee": "$0",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.americanexpress.com/en-ca/credit-cards/simply-cash-card/"
+   },
+   "amexPlatinum": {
+    "name": "Amex Platinum",
+    "issuer": "American Express",
+    "network": "Amex",
+    "foreignTransactionFee": 2.5,
+    "color": "#b8bcc4",
+    "finish": "metal",
+    "tier": "PLATINUM",
+    "pattern": "waves",
+    "textColor": "#1a1a1a",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "membershipRewards"
+      },
+      "note": "MR points"
+     }
+    ],
+    "fee": "$799/yr",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.americanexpress.com/en-ca/charge-cards/the-platinum-card/"
+   },
+   "amexGreen": {
+    "name": "Amex Green",
+    "issuer": "American Express",
+    "network": "Amex",
+    "foreignTransactionFee": 2.5,
+    "color": "#3f7d5a",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "membershipRewards"
+      },
+      "note": "MR points"
+     }
+    ],
+    "fee": "$0",
+    "rateNote": "Not modeled: +1 point on Amex Travel Online hotel and car rental bookings",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.americanexpress.com/en-ca/credit-cards/green-card/"
+   },
+   "amexAeroplan": {
+    "name": "Amex Aeroplan Card",
+    "issuer": "American Express",
+    "network": "Amex",
+    "foreignTransactionFee": 2.5,
+    "color": "#1d3f8c",
+    "pattern": "dots",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "aeroplan"
+      },
+      "note": "Aeroplan points"
+     }
+    ],
+    "fee": "$120/yr",
+    "rateNote": "Charge card: balance must be paid in full each month. Rises to $150 on Jan 12, 2027",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.americanexpress.com/en-ca/charge-cards/aeroplan-card/"
+   },
+   "amexAeroplanReserve": {
+    "name": "Amex Aeroplan Reserve",
+    "issuer": "American Express",
+    "network": "Amex",
+    "foreignTransactionFee": 2.5,
+    "color": "#232a3b",
+    "finish": "metal",
+    "pattern": "grid",
+    "textColor": "#d8c28a",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 1.25,
+       "program": "aeroplan"
+      },
+      "note": "Aeroplan points"
+     }
+    ],
+    "fee": "$599/yr",
+    "rateNote": "Rises to $799 on Jan 12, 2027",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.americanexpress.com/en-ca/credit-cards/aeroplan-reserve/"
+   },
+   "amexMarriott": {
+    "name": "Amex Marriott Bonvoy",
+    "issuer": "American Express",
+    "network": "Amex",
+    "foreignTransactionFee": 2.5,
+    "color": "#8c1d40",
+    "pattern": "waves",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "marriottBonvoy"
+      },
+      "note": "Marriott Bonvoy points"
+     }
+    ],
+    "fee": "$120/yr",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.americanexpress.com/en-ca/credit-cards/marriott-bonvoy-card/"
+   },
+   "scotiaGoldAmex": {
+    "name": "Scotiabank Gold American Express",
+    "issuer": "Scotiabank",
+    "network": "Amex",
+    "foreignTransactionFee": 0,
+    "color": "#c8a24a",
+    "finish": "metal",
+    "tier": "GOLD",
+    "pattern": "lines",
+    "textColor": "#241800",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "scenePlus"
+      },
+      "note": "Scene+ points"
+     }
+    ],
+    "fee": "$120/yr",
+    "rateNote": "Not modeled: Scene+ Travel bonus (up to 4 points per $1 on travel)",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.scotiabank.com/ca/en/personal/credit-cards/american-express/gold-card.html"
+   },
+   "scotiaPassportVI": {
+    "name": "Scotiabank Passport Visa Infinite",
+    "issuer": "Scotiabank",
+    "network": "Visa",
+    "foreignTransactionFee": 0,
+    "color": "#6e1219",
+    "tier": "INFINITE",
+    "pattern": "dots",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "scenePlus"
+      },
+      "note": "Scene+ points"
+     }
+    ],
+    "fee": "$150/yr",
+    "rateNote": "Not modeled: annual bonus of 10,000 points at $40,000 spend, plus 2,000 per extra $10,000",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/passport-infinite-card.html"
+   },
+   "scotiaPlatinumAmex": {
+    "name": "Scotiabank Platinum American Express",
+    "issuer": "Scotiabank",
+    "network": "Amex",
+    "foreignTransactionFee": 0,
+    "color": "#9aa0a8",
+    "finish": "metal",
+    "tier": "PLATINUM",
+    "pattern": "grid",
+    "textColor": "#1a1a1a",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "scenePlus"
+      },
+      "note": "Scene+ points"
+     }
+    ],
+    "fee": "$399/yr",
+    "rateNote": "Not modeled: extra 3 points per $1 on Scene+ Travel hotels and car rentals",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.scotiabank.com/ca/en/personal/credit-cards/american-express/platinum-card.html"
+   },
+   "sceneVisa": {
+    "name": "Scotiabank Scene+ Visa",
+    "issuer": "Scotiabank",
+    "network": "Visa",
+    "foreignTransactionFee": 2.5,
+    "color": "#ffcc00",
+    "pattern": "waves",
+    "textColor": "#1a1a1a",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "scenePlus"
+      },
+      "note": "Scene+ points"
+     }
+    ],
+    "fee": "$0",
+    "rateNote": "Not modeled: Shell fuel savings (up to 3¢ per litre in points value)",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/scene-card.html"
+   },
+   "scotiaMomentum": {
+    "name": "Scotia Momentum Visa",
+    "issuer": "Scotiabank",
+    "network": "Visa",
+    "foreignTransactionFee": 2.5,
+    "color": "#d63a3a",
+    "baseRates": [
+     {
+      "earn": {
+       "percent": 1
+      }
+     }
+    ],
+    "fee": "$49/yr",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/momentum-cash-back-card.html"
+   },
+   "scotiaMomentumNoFee": {
+    "name": "Scotia Momentum No-Fee Visa",
+    "issuer": "Scotiabank",
+    "network": "Visa",
+    "foreignTransactionFee": 2.5,
+    "color": "#7d7f85",
+    "pattern": "lines",
+    "baseRates": [
+     {
+      "earn": {
+       "percent": 0.5
+      }
+     }
+    ],
+    "fee": "$0",
+    "rateNote": "Rates from Scotiabank (official, scotiabank.com)",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/momentum-no-fee-card.html"
+   },
+   "tdAeroplanVI": {
+    "name": "TD Aeroplan Visa Infinite",
+    "issuer": "TD",
+    "network": "Visa",
+    "foreignTransactionFee": 2.5,
+    "color": "#1d6b3a",
+    "tier": "INFINITE",
+    "pattern": "lines",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "aeroplan"
+      },
+      "note": "Aeroplan points"
+     }
+    ],
+    "fee": "$139",
+    "lastChecked": "2026-10-05",
+    "sourceUrl": "https://www.td.com/ca/en/personal-banking/products/credit-cards/aeroplan/aeroplan-visa-infinite-card"
+   },
+   "tdAeroplanPrivilege": {
+    "name": "TD Aeroplan Visa Infinite Privilege",
+    "issuer": "TD",
+    "network": "Visa",
+    "foreignTransactionFee": 2.5,
+    "color": "#14301f",
+    "finish": "metal",
+    "tier": "INFINITE",
+    "pattern": "dots",
+    "textColor": "#d8c28a",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 1.25,
+       "program": "aeroplan"
+      },
+      "note": "Aeroplan points"
+     }
+    ],
+    "fee": "$599",
+    "lastChecked": "2026-10-05",
+    "sourceUrl": "https://www.td.com/ca/en/personal-banking/products/credit-cards/aeroplan/aeroplan-visa-infinite-privilege-card"
+   },
+   "tdAeroplanPlatinum": {
+    "name": "TD Aeroplan Visa Platinum",
+    "issuer": "TD",
+    "network": "Visa",
+    "foreignTransactionFee": 2.5,
+    "color": "#5c8f6b",
+    "finish": "metal",
+    "tier": "PLATINUM",
+    "pattern": "grid",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 0.67,
+       "program": "aeroplan"
+      },
+      "note": "Aeroplan points"
+     }
+    ],
+    "fee": "$89",
+    "lastChecked": "2026-10-05",
+    "sourceUrl": "https://www.td.com/ca/en/personal-banking/products/credit-cards/aeroplan/aeroplan-visa-platinum-card"
+   },
+   "tdFirstClass": {
+    "name": "TD First Class Travel Visa Infinite",
+    "issuer": "TD",
+    "network": "Visa",
+    "foreignTransactionFee": 2.5,
+    "color": "#0f4c3a",
+    "tier": "INFINITE",
+    "pattern": "waves",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "tdRewards"
+      },
+      "note": "TD Rewards points"
+     }
+    ],
+    "fee": "$139",
+    "lastChecked": "2026-10-05",
+    "sourceUrl": "https://www.td.com/ca/en/personal-banking/products/credit-cards/travel-rewards/first-class-travel-visa-infinite-card"
+   },
+   "tdRewardsVisa": {
+    "name": "TD Rewards Visa",
+    "issuer": "TD",
+    "network": "Visa",
+    "foreignTransactionFee": 2.5,
+    "color": "#3f9a6a",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "tdRewards"
+      },
+      "note": "TD Rewards points"
+     }
+    ],
+    "fee": "$0",
+    "lastChecked": "2026-10-05",
+    "sourceUrl": "https://www.td.com/ca/en/personal-banking/products/credit-cards/travel-rewards/rewards-visa-card"
+   },
+   "tdCashBack": {
+    "name": "TD Cash Back Visa",
+    "issuer": "TD",
+    "network": "Visa",
+    "foreignTransactionFee": 2.5,
+    "color": "#7fb08a",
+    "pattern": "lines",
+    "textColor": "#0e2a18",
+    "baseRates": [
+     {
+      "earn": {
+       "percent": 0.5
+      }
+     }
+    ],
+    "fee": "$0",
+    "lastChecked": "2026-10-05",
+    "sourceUrl": "https://www.td.com/ca/en/personal-banking/products/credit-cards/cash-back/cash-back-visa-card"
+   },
+   "rbcCashBackPreferred": {
+    "name": "RBC Cash Back Preferred World Elite Mastercard",
+    "issuer": "RBC",
+    "network": "Mastercard",
+    "foreignTransactionFee": 2.5,
+    "color": "#12294d",
+    "tier": "WORLD ELITE",
+    "pattern": "lines",
+    "textColor": "#ffd24a",
+    "baseRates": [
+     {
+      "earn": {
+       "percent": 1
+      },
+      "effectiveFrom": "2026-10-01"
+     }
+    ],
+    "fee": "$120/yr",
+    "lastChecked": "2026-10-05",
+    "sourceUrl": "https://www.rbcroyalbank.com/credit-cards/cash-back/rbc-preferred-world-elite-mastercard.html"
+   },
+   "rbcAvionVI": {
+    "name": "RBC Avion Visa Infinite",
+    "issuer": "RBC",
+    "network": "Visa",
+    "foreignTransactionFee": 2.5,
+    "color": "#0a51a1",
+    "tier": "INFINITE",
+    "pattern": "dots",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "avionElite"
+      },
+      "note": "Avion Elite points"
+     }
+    ],
+    "fee": "$120/yr",
+    "lastChecked": "2026-10-05",
+    "sourceUrl": "https://www.rbcroyalbank.com/credit-cards/travel/rbc-avion-visa-infinite.html"
+   },
+   "rbcAvionPrivilege": {
+    "name": "RBC Avion Visa Infinite Privilege",
+    "issuer": "RBC",
+    "network": "Visa",
+    "foreignTransactionFee": 2.5,
+    "color": "#0b0b14",
+    "finish": "metal",
+    "tier": "INFINITE",
+    "pattern": "grid",
+    "textColor": "#d8c28a",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 1.25,
+       "program": "avionElite"
+      },
+      "note": "Avion Elite points"
+     }
+    ],
+    "fee": "$399/yr",
+    "lastChecked": "2026-10-05",
+    "sourceUrl": "https://www.rbcroyalbank.com/credit-cards/travel/rbc-avion-visa-infinite-privilege.html"
+   },
+   "rbcAvionPlatinum": {
+    "name": "RBC Avion Visa Platinum",
+    "issuer": "RBC",
+    "network": "Visa",
+    "foreignTransactionFee": 2.5,
+    "color": "#8da4c4",
+    "finish": "metal",
+    "tier": "PLATINUM",
+    "pattern": "waves",
+    "textColor": "#10203a",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "avionElite"
+      },
+      "note": "Avion Elite points"
+     }
+    ],
+    "fee": "$120/yr",
+    "lastChecked": "2026-10-05",
+    "sourceUrl": "https://www.rbcroyalbank.com/credit-cards/travel/rbc-visa-platinum-avion.html"
+   },
+   "rbcIonPlus": {
+    "name": "RBC ION+ Visa",
+    "issuer": "RBC",
+    "network": "Visa",
+    "foreignTransactionFee": 2.5,
+    "color": "#2d2d2d",
+    "textColor": "#ffcf33",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "avionPremium"
+      },
+      "note": "Avion Premium points"
+     }
+    ],
+    "fee": "$48/yr",
+    "rateNote": "$4/month",
+    "lastChecked": "2026-10-05",
+    "sourceUrl": "https://www.rbcroyalbank.com/credit-cards/rewards/rbc-ion-plus-visa.html"
+   },
+   "rbcIon": {
+    "name": "RBC ION Visa",
+    "issuer": "RBC",
+    "network": "Visa",
+    "foreignTransactionFee": 2.5,
+    "color": "#ffcf33",
+    "pattern": "lines",
+    "textColor": "#1a1a1a",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "avionPremium"
+      },
+      "note": "Avion Premium points"
+     }
+    ],
+    "fee": "$0",
+    "lastChecked": "2026-10-05",
+    "sourceUrl": "https://www.rbcroyalbank.com/credit-cards/rewards/rbc-ion-visa.html"
+   },
+   "rbcVisaPlatinum": {
+    "name": "RBC Visa Platinum",
+    "issuer": "RBC",
+    "network": "Visa",
+    "foreignTransactionFee": 2.5,
+    "color": "#a7b1bd",
+    "finish": "metal",
+    "tier": "PLATINUM",
+    "pattern": "dots",
+    "textColor": "#1a1a1a",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 0.5,
+       "program": "avionPremium"
+      },
+      "note": "Avion Premium points"
+     }
+    ],
+    "fee": "$0",
+    "rateNote": "Earn rate not shown on RBC's page",
+    "lastChecked": "2026-10-05",
+    "sourceUrl": "https://www.rbcroyalbank.com/credit-cards/no-fee/rbc-visa-platinum.html"
+   },
+   "cibcAventuraVI": {
+    "name": "CIBC Aventura Visa Infinite",
+    "issuer": "CIBC",
+    "network": "Visa",
+    "foreignTransactionFee": 2.5,
+    "color": "#7a1020",
+    "tier": "INFINITE",
+    "pattern": "dots",
+    "textColor": "#e8c9c9",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "aventura"
+      },
+      "note": "Aventura points"
+     }
+    ],
+    "fee": "$139",
+    "rateNote": "Annual fee rebated in the first year",
+    "lastChecked": "2026-10-04",
+    "sourceUrl": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aventura-visa-infinite-card.html"
+   },
+   "cibcAventuraGold": {
+    "name": "CIBC Aventura Gold Visa",
+    "issuer": "CIBC",
+    "network": "Visa",
+    "foreignTransactionFee": 2.5,
+    "color": "#d4a73a",
+    "finish": "metal",
+    "tier": "GOLD",
+    "pattern": "grid",
+    "textColor": "#2a1c00",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "aventura"
+      },
+      "note": "Aventura points"
+     }
+    ],
+    "fee": "$139",
+    "rateNote": "Annual fee rebated in the first year",
+    "lastChecked": "2026-10-04",
+    "sourceUrl": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aventura-gold-visa-card.html"
+   },
+   "cibcAventura": {
+    "name": "CIBC Aventura Visa",
+    "issuer": "CIBC",
+    "network": "Visa",
+    "foreignTransactionFee": 2.5,
+    "color": "#b3243a",
+    "pattern": "waves",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 0.5,
+       "program": "aventura"
+      },
+      "note": "Aventura points"
+     }
+    ],
+    "fee": "$0",
+    "lastChecked": "2026-10-04",
+    "sourceUrl": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aventura-visa-card.html"
+   },
+   "cibcAeroplanVI": {
+    "name": "CIBC Aeroplan Visa Infinite",
+    "issuer": "CIBC",
+    "network": "Visa",
+    "foreignTransactionFee": 2.5,
+    "color": "#25508f",
+    "tier": "INFINITE",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "aeroplan"
+      },
+      "note": "Aeroplan points"
+     }
+    ],
+    "fee": "$139",
+    "lastChecked": "2026-10-04",
+    "sourceUrl": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aeroplan-visa-infinite-card.html"
+   },
+   "cibcAeroplan": {
+    "name": "CIBC Aeroplan Visa",
+    "issuer": "CIBC",
+    "network": "Visa",
+    "foreignTransactionFee": 2.5,
+    "color": "#5b84b8",
+    "pattern": "lines",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 0.67,
+       "program": "aeroplan"
+      },
+      "note": "Aeroplan points"
+     }
+    ],
+    "fee": "$0",
+    "rateNote": "Rates from review sites; confirm on cibc.com",
+    "lastChecked": "2026-10-04",
+    "sourceUrl": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aeroplan-visa-card.html"
+   },
+   "cibcDividendVisa": {
+    "name": "CIBC Dividend Visa",
+    "issuer": "CIBC",
+    "network": "Visa",
+    "foreignTransactionFee": 2.5,
+    "color": "#d1344a",
+    "pattern": "dots",
+    "baseRates": [
+     {
+      "earn": {
+       "percent": 0.5
+      }
+     }
+    ],
+    "fee": "$0",
+    "rateNote": "Rates from review sites; confirm on cibc.com",
+    "lastChecked": "2026-10-04",
+    "sourceUrl": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/dividend-visa-card.html"
+   },
+   "cibcDividendPlatinum": {
+    "name": "CIBC Dividend Platinum Visa",
+    "issuer": "CIBC",
+    "network": "Visa",
+    "foreignTransactionFee": 2.5,
+    "color": "#9aa0a8",
+    "finish": "metal",
+    "tier": "PLATINUM",
+    "pattern": "grid",
+    "textColor": "#1a1a1a",
+    "baseRates": [
+     {
+      "earn": {
+       "percent": 1
+      }
+     }
+    ],
+    "fee": "$99",
+    "rateNote": "Annual fee rebated in the first year",
+    "lastChecked": "2026-10-04",
+    "sourceUrl": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/dividend-visa-platinum-card.html"
+   },
+   "bmoEclipse": {
+    "name": "BMO eclipse Visa Infinite",
+    "issuer": "BMO",
+    "network": "Visa",
+    "foreignTransactionFee": 2.5,
+    "color": "#101826",
+    "tier": "INFINITE",
+    "pattern": "lines",
+    "textColor": "#6fc3ff",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "bmoRewards"
+      },
+      "note": "BMO Rewards points"
+     }
+    ],
+    "fee": "$120/yr",
+    "rateNote": "First year waived · Fee not confirmed on BMO page",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.bmo.com/main/personal/credit-cards/bmo-eclipse-visa-infinite/"
+   },
+   "bmoAscend": {
+    "name": "BMO Ascend World Elite Mastercard",
+    "issuer": "BMO",
+    "network": "Mastercard",
+    "foreignTransactionFee": 2.5,
+    "color": "#2b2f3a",
+    "tier": "WORLD ELITE",
+    "pattern": "dots",
+    "textColor": "#e0b872",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "bmoRewards"
+      },
+      "note": "BMO Rewards points"
+     }
+    ],
+    "fee": "$150/yr, first year waived",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.bmo.com/main/personal/credit-cards/bmo-ascend-world-elite-mastercard/"
+   },
+   "bmoCashBackMC": {
+    "name": "BMO CashBack Mastercard",
+    "issuer": "BMO",
+    "network": "Mastercard",
+    "foreignTransactionFee": 2.5,
+    "color": "#4aa3df",
+    "pattern": "grid",
+    "textColor": "#05263d",
+    "baseRates": [
+     {
+      "earn": {
+       "percent": 0.5
+      }
+     }
+    ],
+    "fee": "$0",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.bmo.com/main/personal/credit-cards/bmo-cashback-mastercard/"
+   },
+   "bmoEclipsePrivilege": {
+    "name": "BMO eclipse Visa Infinite Privilege",
+    "issuer": "BMO",
+    "network": "Visa",
+    "foreignTransactionFee": 2.5,
+    "color": "#14110d",
+    "textColor": "#e0bf7a",
+    "finish": "metal",
+    "tier": "PRIVILEGE",
+    "pattern": "waves",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "bmoRewards"
+      },
+      "note": "BMO Rewards points"
+     }
+    ],
+    "fee": "not confirmed",
+    "rateNote": "Fee not shown on BMO page. Not modeled: 25% more points with an authorized user, $200 lifestyle credit",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-eclipse-visa-infinite-privilege/"
+   },
+   "bmoEclipseRise": {
+    "name": "BMO eclipse rise Visa",
+    "issuer": "BMO",
+    "network": "Visa",
+    "foreignTransactionFee": 2.5,
+    "color": "#17b2a3",
+    "textColor": "#04302c",
+    "pattern": "lines",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 0.5,
+       "program": "bmoRewards"
+      },
+      "note": "BMO Rewards points · 1 point per $2"
+     }
+    ],
+    "fee": "$0",
+    "rateNote": "Not modeled: up to 5,000 bonus points a year for on-time payments and Pay with Points",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-eclipse-rise-visa/"
+   },
+   "bmoBlueRewards": {
+    "name": "BMO Blue Rewards Mastercard",
+    "issuer": "BMO",
+    "network": "Mastercard",
+    "foreignTransactionFee": 2.5,
+    "color": "#2f5bea",
+    "pattern": "dots",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 0.5,
+       "program": "blueRewards"
+      },
+      "note": "Blue Points"
+     }
+    ],
+    "fee": "$0",
+    "rateNote": "Not modeled: 5 points per $1 at Blue Rewards Partners (travel via Blue Rewards Travel, Dollarama, Pharmasave and more), 1 point on alcohol",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-blue-rewards-mastercard/"
+   },
+   "bmoBlueRewardsWE": {
+    "name": "BMO Blue Rewards World Elite Mastercard",
+    "issuer": "BMO",
+    "network": "Mastercard",
+    "foreignTransactionFee": 2.5,
+    "color": "#1b2f7a",
+    "textColor": "#cfe0ff",
+    "tier": "WORLD ELITE",
+    "pattern": "grid",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "blueRewards"
+      },
+      "note": "Blue Points"
+     }
+    ],
+    "fee": "$150/yr, first year waived",
+    "rateNote": "Rebated yearly with BMO Premium Chequing. Not modeled: 10 points per $1 at Blue Rewards Partners, 2 points on alcohol",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-blue-rewards-world-elite-mastercard/"
+   },
+   "bmoVIPorter": {
+    "name": "BMO VIPorter Mastercard",
+    "issuer": "BMO",
+    "network": "Mastercard",
+    "foreignTransactionFee": 2.5,
+    "color": "#d7dde6",
+    "textColor": "#10243d",
+    "pattern": "waves",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 0.5,
+       "program": "viporter"
+      },
+      "note": "VIPorter points"
+     }
+    ],
+    "fee": "$89/yr, first year waived",
+    "rateNote": "Fee is from BMO terms shared with the VIPorter World Mastercard; confirm. Not modeled: 1 point per $1 on hotels (up to $3,000/yr)",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-viporter-mastercard/"
+   },
+   "bmoVIPorterWorld": {
+    "name": "BMO VIPorter World Mastercard",
+    "issuer": "BMO",
+    "network": "Mastercard",
+    "foreignTransactionFee": 2.5,
+    "color": "#5a7fa8",
+    "pattern": "dots",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 0.5,
+       "program": "viporter"
+      },
+      "note": "VIPorter points"
+     }
+    ],
+    "fee": "$89/yr, first year waived",
+    "rateNote": "Fee is from BMO terms shared with the VIPorter Mastercard; confirm. Not modeled: 1 point per $1 on hotels (up to $3,000/yr)",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-viporter-world-mastercard/"
+   },
+   "bmoVIPorterWE": {
+    "name": "BMO VIPorter World Elite Mastercard",
+    "issuer": "BMO",
+    "network": "Mastercard",
+    "foreignTransactionFee": 2.5,
+    "color": "#0d1f33",
+    "textColor": "#e6c27a",
+    "tier": "WORLD ELITE",
+    "pattern": "lines",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "viporter"
+      },
+      "note": "VIPorter points"
+     }
+    ],
+    "fee": "$199/yr, first year waived",
+    "rateNote": "Not modeled: 2 points per $1 on hotels (up to $5,000/yr), companion pass",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-viporter-world-elite-mastercard/"
+   },
+   "nbWorldElite": {
+    "name": "National Bank World Elite Mastercard",
+    "issuer": "National Bank",
+    "network": "Mastercard",
+    "foreignTransactionFee": 2.5,
+    "color": "#c8102e",
+    "tier": "WORLD ELITE",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "alaCarte"
+      },
+      "note": "À la carte points"
+     }
+    ],
+    "fee": "$150/yr",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.nbc.ca/personal/mastercard-credit-cards/world-elite.html"
+   },
+   "desjardinsCashBackWE": {
+    "name": "Desjardins Cash Back World Elite Mastercard",
+    "issuer": "Desjardins",
+    "network": "Mastercard",
+    "foreignTransactionFee": 2.5,
+    "color": "#00874e",
+    "tier": "WORLD ELITE",
+    "baseRates": [
+     {
+      "earn": {
+       "percent": 1
+      }
+     }
+    ],
+    "fee": "$100/yr",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.desjardins.com/en/credit-cards/cash-back-world-elite-mastercard.html"
+   },
+   "desjardinsCashBackVisa": {
+    "name": "Desjardins Cash Back Visa",
+    "issuer": "Desjardins",
+    "network": "Visa",
+    "foreignTransactionFee": 2.5,
+    "color": "#5fb184",
+    "pattern": "lines",
+    "textColor": "#06261a",
+    "baseRates": [
+     {
+      "earn": {
+       "percent": 0.5
+      }
+     }
+    ],
+    "fee": "$0",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.desjardins.com/en/credit-cards/cash-back-visa.html"
+   },
+   "desjardinsCashBackMC": {
+    "name": "Desjardins Cash Back Mastercard",
+    "issuer": "Desjardins",
+    "network": "Mastercard",
+    "foreignTransactionFee": 2.5,
+    "color": "#a9d9bf",
+    "pattern": "dots",
+    "textColor": "#06261a",
+    "baseRates": [
+     {
+      "earn": {
+       "percent": 0.5
+      }
+     }
+    ],
+    "fee": "$0",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.desjardins.com/en/credit-cards/cash-back-mastercard.html"
+   },
+   "mbnaWE": {
+    "name": "MBNA Rewards World Elite Mastercard",
+    "issuer": "MBNA",
+    "network": "Mastercard",
+    "foreignTransactionFee": 2.5,
+    "color": "#14171c",
+    "tier": "WORLD ELITE",
+    "textColor": "#e0b872",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "mbnaRewards"
+      },
+      "note": "MBNA Rewards points"
+     }
+    ],
+    "fee": "$120/yr",
+    "rateNote": "Not modeled: birthday bonus points (10% of the points earned in the past year, up to 15,000)",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.mbna.ca/en/credit-cards/rewards/mbna-rewards-world-elite-mastercard"
+   },
+   "walmartWorldMC": {
+    "name": "Walmart Rewards World Mastercard",
+    "issuer": "Walmart Rewards",
+    "network": "Mastercard",
+    "foreignTransactionFee": 2.5,
+    "color": "#0071ce",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "walmartRewardDollars"
+      },
+      "note": "Walmart Reward Dollars · only spendable at Walmart"
+     }
+    ],
+    "fee": "$0",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.walmartrewards.ca/en"
+   },
+   "walmartMC": {
+    "name": "Walmart Rewards Mastercard",
+    "issuer": "Walmart Rewards",
+    "network": "Mastercard",
+    "foreignTransactionFee": 2.5,
+    "color": "#ffc220",
+    "pattern": "lines",
+    "textColor": "#1a1a1a",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "walmartRewardDollars"
+      },
+      "note": "Walmart Reward Dollars · only spendable at Walmart"
+     }
+    ],
+    "fee": "$0",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.walmartrewards.ca/en"
+   },
+   "pcWorldMC": {
+    "name": "PC Financial World Mastercard",
+    "issuer": "PC Financial",
+    "network": "Mastercard",
+    "foreignTransactionFee": 2.5,
+    "color": "#a30015",
+    "pattern": "lines",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 10,
+       "program": "pcOptimum"
+      },
+      "note": "PC Optimum points"
+     }
+    ],
+    "fee": "$0",
+    "rateNote": "Not modeled: Joe Fresh at 2% back in points",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.pcfinancial.ca/en/credit-cards/pc-mastercard/"
+   },
+   "pcMC": {
+    "name": "PC Financial Mastercard",
+    "issuer": "PC Financial",
+    "network": "Mastercard",
+    "foreignTransactionFee": 2.5,
+    "color": "#f4a0a8",
+    "pattern": "dots",
+    "textColor": "#3a0008",
+    "baseRates": [
+     {
+      "earn": {
+       "pointsPerDollar": 10,
+       "program": "pcOptimum"
+      },
+      "note": "PC Optimum points"
+     }
+    ],
+    "fee": "$0",
+    "rateNote": "Not modeled: Joe Fresh at 1% back in points",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://www.pcfinancial.ca/en/credit-cards/pc-mastercard/"
+   },
+   "triangleMC": {
+    "name": "Triangle Mastercard",
+    "issuer": "Canadian Tire Bank",
+    "network": "Mastercard",
+    "foreignTransactionFee": 2.5,
+    "color": "#d62828",
+    "pattern": "lines",
+    "baseRates": [
+     {
+      "earn": {
+       "percent": 0.5
+      },
+      "note": "CT Money"
+     }
+    ],
+    "fee": "$0",
+    "lastChecked": "2026-10-06",
+    "sourceUrl": "https://triangle.canadiantire.ca/en/credit-cards/triangle-mastercard.html"
+   },
+   "capitalOneQuicksilverWE": {
+    "name": "Capital One Quicksilver World Elite Mastercard",
+    "issuer": "Capital One",
+    "network": "Mastercard",
+    "foreignTransactionFee": 0,
+    "color": "#aeb3ba",
+    "textColor": "#1f2328",
+    "tier": "WORLD ELITE",
+    "pattern": "waves",
+    "baseRates": [
+     {
+      "earn": {
+       "percent": 1
+      }
+     }
+    ],
+    "fee": "$0",
+    "rateNote": "Minimum income: $80,000 individual or $150,000 household. Walmart and Costco don't count as grocery stores",
+    "firstYearOffer": {
+     "months": 12,
+     "label": "Cash back match",
+     "multiplier": 2,
+     "note": "Unlimited dollar-for-dollar match for the first 365 days from account approval, credited within 2 billing cycles after. Only for new cardholders who were shown the offer at application."
+    },
+    "lastChecked": "2026-10-10",
+    "sourceUrl": "https://www.capitalone.ca/credit-cards/compare/"
+   },
+   "capitalOneQuicksilverWorld": {
+    "name": "Capital One Quicksilver World Mastercard",
+    "issuer": "Capital One",
+    "network": "Mastercard",
+    "foreignTransactionFee": 0,
+    "color": "#c4c8cd",
+    "textColor": "#1f2328",
+    "tier": "WORLD",
+    "pattern": "grid",
+    "baseRates": [
+     {
+      "earn": {
+       "percent": 1
+      }
+     }
+    ],
+    "fee": "$0",
+    "rateNote": "Minimum income: $50,000 individual or $80,000 household. Walmart and Costco don't count as grocery stores",
+    "firstYearOffer": {
+     "months": 12,
+     "label": "Cash back match",
+     "multiplier": 2,
+     "note": "Unlimited dollar-for-dollar match for the first 365 days from account approval, credited within 2 billing cycles after. Only for new cardholders who were shown the offer at application."
+    },
+    "lastChecked": "2026-10-10",
+    "sourceUrl": "https://www.capitalone.ca/credit-cards/compare/"
+   }
+  },
+  "categories": [
+   {
+    "id": "dining",
+    "name": "Dining & cafes",
+    "offers": [
+     {
+      "card": "desjardinsOdysseyWE",
+      "earn": {
+       "percent": 3
+      },
+      "cap": {
+       "amount": 6000,
+       "period": "year"
+      },
+      "note": "Restaurants"
+     },
+     {
+      "card": "desjardinsOdysseyVIP",
+      "earn": {
+       "percent": 4
+      },
+      "note": "Restaurants"
+     },
+     {
+      "card": "bmoEclipsePrivilege",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "bmoRewards"
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "BMO Rewards points · shared with food delivery"
+     },
+     {
+      "card": "bmoEclipseRise",
+      "earn": {
+       "pointsPerDollar": 2.5,
+       "program": "bmoRewards"
+      },
+      "cap": {
+       "amount": 5000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "BMO Rewards points · 5 points per $2 · shared with food delivery"
+     },
+     {
+      "card": "bmoVIPorter",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "viporter"
+      },
+      "cap": {
+       "amount": 5000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "VIPorter points · shared with groceries"
+     },
+     {
+      "card": "bmoVIPorterWorld",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "viporter"
+      },
+      "cap": {
+       "amount": 5000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "VIPorter points · shared with groceries"
+     },
+     {
+      "card": "bmoVIPorterWE",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "viporter"
+      },
+      "cap": {
+       "amount": 10000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "VIPorter points · shared with groceries"
+     },
+     {
+      "card": "nbWorldElite",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "alaCarte"
+      },
+      "cap": {
+       "amount": 2500,
+       "period": "month",
+       "basis": "total"
+      },
+      "note": "À la carte points · then 2x"
+     },
+     {
+      "card": "desjardinsCashBackWE",
+      "earn": {
+       "percent": 3
+      },
+      "cap": {
+       "amount": 6000,
+       "period": "year"
+      }
+     },
+     {
+      "card": "desjardinsCashBackVisa",
+      "earn": {
+       "percent": 2
+      },
+      "cap": {
+       "amount": 3600,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Restaurants"
+     },
+     {
+      "card": "desjardinsCashBackMC",
+      "earn": {
+       "percent": 2
+      },
+      "cap": {
+       "amount": 3600,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Restaurants"
+     },
+     {
+      "card": "simpliiVisa",
+      "earn": {
+       "percent": 4
+      },
+      "cap": {
+       "amount": 5000,
+       "period": "year"
+      },
+      "note": "Restaurants, bars and coffee shops · regular rate, not a promotion"
+     },
+     {
+      "card": "cibcCostcoMC",
+      "earn": {
+       "percent": 3
+      },
+      "note": "Restaurants"
+     },
+     {
+      "card": "cibcDividendVI",
+      "earn": {
+       "percent": 2
+      }
+     },
+     {
+      "card": "cibcDividendPlatinum",
+      "earn": {
+       "percent": 2
+      }
+     },
+     {
+      "card": "amexCobalt",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "membershipRewards"
+      },
+      "cap": {
+       "amount": 2500,
+       "period": "month",
+       "combined": true
+      },
+      "note": "MR points · in Canada · then 1 pt/$1 · Confirm in Amex terms"
+     },
+     {
+      "card": "amexPlatinum",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "membershipRewards"
+      },
+      "note": "MR points · in Canada"
+     },
+     {
+      "card": "amexAeroplan",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aeroplan"
+      },
+      "note": "Aeroplan points · in Canada"
+     },
+     {
+      "card": "amexAeroplanReserve",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "aeroplan"
+      },
+      "note": "Aeroplan points · in Canada"
+     },
+     {
+      "card": "tangerineMC",
+      "earn": {
+       "percent": 2
+      },
+      "chosen": "dining",
+      "note": "Your pick"
+     },
+     {
+      "card": "tangerineWorldMC",
+      "earn": {
+       "percent": 2
+      },
+      "chosen": "dining",
+      "note": "Your pick"
+     },
+     {
+      "card": "tangerineWE",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "scenePlus"
+      },
+      "chosen": "dining",
+      "note": "Scene+ points · your pick"
+     },
+     {
+      "card": "scotiaGoldAmex",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "scenePlus"
+      },
+      "cap": {
+       "amount": 50000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Scene+ points · in Canada · Confirm in Scotiabank terms"
+     },
+     {
+      "card": "scotiaPassportVI",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "scenePlus"
+      },
+      "cap": {
+       "amount": 50000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Scene+ points"
+     },
+     {
+      "card": "tdAeroplanPrivilege",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aeroplan"
+      },
+      "cap": {
+       "amount": 100000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Aeroplan points · Confirm in TD terms"
+     },
+     {
+      "card": "tdFirstClass",
+      "earn": {
+       "pointsPerDollar": 6,
+       "program": "tdRewards"
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year"
+      },
+      "note": "TD Rewards points · Confirm in TD terms"
+     },
+     {
+      "card": "tdRewardsVisa",
+      "earn": {
+       "pointsPerDollar": 3,
+       "program": "tdRewards"
+      },
+      "cap": {
+       "amount": 5000,
+       "period": "year"
+      },
+      "note": "TD Rewards points · Confirm in TD terms"
+     },
+     {
+      "card": "rbcCashBackPreferred",
+      "earn": {
+       "percent": 3
+      },
+      "effectiveFrom": "2026-10-01"
+     },
+     {
+      "card": "rbcIonPlus",
+      "earn": {
+       "pointsPerDollar": 3,
+       "program": "avionPremium"
+      },
+      "note": "Avion Premium points"
+     },
+     {
+      "card": "cibcDividendVisa",
+      "earn": {
+       "percent": 1
+      }
+     },
+     {
+      "card": "bmoEclipse",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "bmoRewards"
+      },
+      "cap": {
+       "amount": 6000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "BMO Rewards points"
+     },
+     {
+      "card": "bmoAscend",
+      "earn": {
+       "pointsPerDollar": 3,
+       "program": "bmoRewards"
+      },
+      "cap": {
+       "amount": 10000,
+       "period": "year"
+      },
+      "note": "BMO Rewards points"
+     },
+     {
+      "card": "mbnaWE",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "mbnaRewards"
+      },
+      "cap": {
+       "amount": 50000,
+       "period": "year"
+      },
+      "note": "MBNA Rewards points · restaurants"
+     }
+    ]
+   },
+   {
+    "id": "groceries",
+    "name": "Groceries",
+    "offers": [
+     {
+      "card": "capitalOneQuicksilverWE",
+      "earn": {
+       "percent": 3
+      },
+      "note": "No cap"
+     },
+     {
+      "card": "capitalOneQuicksilverWorld",
+      "earn": {
+       "percent": 3
+      },
+      "note": "No cap"
+     },
+     {
+      "card": "nbWorldElite",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "alaCarte"
+      },
+      "cap": {
+       "amount": 2500,
+       "period": "month",
+       "basis": "total"
+      },
+      "note": "À la carte points · then 2x"
+     },
+     {
+      "card": "desjardinsCashBackWE",
+      "earn": {
+       "percent": 4
+      },
+      "cap": {
+       "amount": 10000,
+       "period": "year"
+      }
+     },
+     {
+      "card": "bmoEclipse",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "bmoRewards"
+      },
+      "cap": {
+       "amount": 6000,
+       "period": "year"
+      },
+      "note": "BMO Rewards points"
+     },
+     {
+      "card": "bmoCashBackMC",
+      "earn": {
+       "percent": 3
+      },
+      "cap": {
+       "amount": 500,
+       "period": "month"
+      }
+     },
+     {
+      "card": "cibcAventuraVI",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aventura"
+      },
+      "note": "Aventura points"
+     },
+     {
+      "card": "cibcAventuraGold",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aventura"
+      },
+      "note": "Aventura points"
+     },
+     {
+      "card": "cibcAventura",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "aventura"
+      },
+      "note": "Aventura points"
+     },
+     {
+      "card": "cibcAeroplanVI",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aeroplan"
+      },
+      "note": "Aeroplan points"
+     },
+     {
+      "card": "cibcAeroplan",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "aeroplan"
+      },
+      "note": "Aeroplan points"
+     },
+     {
+      "card": "cibcDividendVisa",
+      "earn": {
+       "percent": 2
+      }
+     },
+     {
+      "card": "cibcDividendPlatinum",
+      "earn": {
+       "percent": 3
+      }
+     },
+     {
+      "card": "rbcCashBackPreferred",
+      "earn": {
+       "percent": 3
+      },
+      "effectiveFrom": "2026-10-01",
+      "note": "Not Costco or Walmart, which earn the base rate"
+     },
+     {
+      "card": "rbcIonPlus",
+      "earn": {
+       "pointsPerDollar": 3,
+       "program": "avionPremium"
+      },
+      "note": "Avion Premium points"
+     },
+     {
+      "card": "rbcIon",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "avionPremium"
+      },
+      "note": "Avion Premium points"
+     },
+     {
+      "card": "tdAeroplanVI",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aeroplan"
+      },
+      "cap": {
+       "amount": 80000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Aeroplan points"
+     },
+     {
+      "card": "tdAeroplanPrivilege",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aeroplan"
+      },
+      "cap": {
+       "amount": 100000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Aeroplan points · Confirm in TD terms"
+     },
+     {
+      "card": "tdAeroplanPlatinum",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "aeroplan"
+      },
+      "cap": {
+       "amount": 80000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Aeroplan points · Confirm in TD terms"
+     },
+     {
+      "card": "tdFirstClass",
+      "earn": {
+       "pointsPerDollar": 6,
+       "program": "tdRewards"
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year"
+      },
+      "note": "TD Rewards points · Confirm in TD terms"
+     },
+     {
+      "card": "tdRewardsVisa",
+      "earn": {
+       "pointsPerDollar": 3,
+       "program": "tdRewards"
+      },
+      "cap": {
+       "amount": 5000,
+       "period": "year"
+      },
+      "note": "TD Rewards points · Confirm in TD terms"
+     },
+     {
+      "card": "tdCashBack",
+      "earn": {
+       "percent": 1
+      },
+      "cap": {
+       "amount": 5000,
+       "period": "year"
+      },
+      "note": "Confirm in TD terms"
+     },
+     {
+      "card": "scotiaGoldAmex",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "scenePlus"
+      },
+      "cap": {
+       "amount": 50000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Scene+ points · other grocery stores · Confirm in Scotiabank terms"
+     },
+     {
+      "card": "scotiaPassportVI",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "scenePlus"
+      },
+      "cap": {
+       "amount": 50000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Scene+ points · other grocery stores · Not stated on Scotiabank page; confirm"
+     },
+     {
+      "card": "scotiaMomentum",
+      "earn": {
+       "percent": 2
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Confirm in Scotiabank terms"
+     },
+     {
+      "card": "scotiaMomentumNoFee",
+      "earn": {
+       "percent": 1
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year",
+       "combined": true
+      }
+     },
+     {
+      "card": "amexSimplyCashPreferred",
+      "earn": {
+       "percent": 4
+      },
+      "cap": {
+       "amount": 30000,
+       "period": "year"
+      },
+      "note": "Stand-alone stores in Canada"
+     },
+     {
+      "card": "amexSimplyCash",
+      "earn": {
+       "percent": 2
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year"
+      },
+      "note": "Stand-alone stores in Canada"
+     },
+     {
+      "card": "cibcDividendVI",
+      "earn": {
+       "percent": 4
+      }
+     },
+     {
+      "card": "tdVisaInfinite",
+      "earn": {
+       "percent": 3
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year"
+      },
+      "note": "Confirm in TD terms"
+     },
+     {
+      "card": "triangleWEMC",
+      "earn": {
+       "percent": 3
+      },
+      "cap": {
+       "amount": 12000,
+       "period": "year"
+      },
+      "note": "CT Money · excludes Costco and Walmart"
+     },
+     {
+      "card": "amexGold",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "membershipRewards"
+      },
+      "note": "MR points · in Canada"
+     },
+     {
+      "card": "rbcCashBackMC",
+      "earn": {
+       "percent": 2
+      },
+      "note": "Not Costco or Walmart"
+     },
+     {
+      "card": "simpliiVisa",
+      "earn": {
+       "percent": 1.5
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year",
+       "combined": true
+      }
+     },
+     {
+      "card": "amexCobalt",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "membershipRewards"
+      },
+      "cap": {
+       "amount": 2500,
+       "period": "month",
+       "combined": true
+      },
+      "note": "MR points · in Canada · then 1 pt/$1 · Confirm in Amex terms"
+     },
+     {
+      "card": "tangerineMC",
+      "earn": {
+       "percent": 2
+      },
+      "chosen": "groceries",
+      "note": "Your pick"
+     },
+     {
+      "card": "tangerineWorldMC",
+      "earn": {
+       "percent": 2
+      },
+      "chosen": "groceries",
+      "note": "Your pick"
+     },
+     {
+      "card": "tangerineWE",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "scenePlus"
+      },
+      "chosen": "groceries",
+      "note": "Scene+ points · your pick"
+     },
+     {
+      "card": "scotiaVI",
+      "earn": {
+       "percent": 4
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year",
+       "combined": true
+      }
+     },
+     {
+      "card": "bmoCashBackWE",
+      "earn": {
+       "percent": 5
+      },
+      "cap": {
+       "amount": 500,
+       "period": "month"
+      }
+     },
+     {
+      "card": "mbnaWE",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "mbnaRewards"
+      },
+      "cap": {
+       "amount": 50000,
+       "period": "year"
+      },
+      "note": "MBNA Rewards points"
+     },
+     {
+      "card": "triangleMC",
+      "earn": {
+       "percent": 1.5
+      },
+      "cap": {
+       "amount": 12000,
+       "period": "year"
+      },
+      "note": "CT Money · excludes Costco and Walmart"
+     },
+     {
+      "card": "bmoEclipsePrivilege",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "bmoRewards"
+      },
+      "cap": {
+       "amount": 20000,
+       "period": "year"
+      },
+      "note": "BMO Rewards points"
+     },
+     {
+      "card": "bmoEclipseRise",
+      "earn": {
+       "pointsPerDollar": 2.5,
+       "program": "bmoRewards"
+      },
+      "cap": {
+       "amount": 5000,
+       "period": "year"
+      },
+      "note": "BMO Rewards points · 5 points per $2"
+     },
+     {
+      "card": "bmoBlueRewards",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "blueRewards"
+      },
+      "cap": {
+       "amount": 500,
+       "period": "month"
+      },
+      "note": "Blue Points"
+     },
+     {
+      "card": "bmoBlueRewardsWE",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "blueRewards"
+      },
+      "cap": {
+       "amount": 500,
+       "period": "month"
+      },
+      "note": "Blue Points"
+     },
+     {
+      "card": "bmoVIPorter",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "viporter"
+      },
+      "cap": {
+       "amount": 5000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "VIPorter points · shared with dining"
+     },
+     {
+      "card": "bmoVIPorterWorld",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "viporter"
+      },
+      "cap": {
+       "amount": 5000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "VIPorter points · shared with dining"
+     },
+     {
+      "card": "bmoVIPorterWE",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "viporter"
+      },
+      "cap": {
+       "amount": 10000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "VIPorter points · shared with dining"
+     },
+     {
+      "card": "desjardinsOdysseyWE",
+      "earn": {
+       "percent": 3
+      },
+      "cap": {
+       "amount": 10000,
+       "period": "year"
+      }
+     },
+     {
+      "card": "desjardinsOdysseyVIP",
+      "earn": {
+       "percent": 3
+      }
+     },
+     {
+      "card": "nbEcho",
+      "earn": {
+       "percent": 1.5
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Gas, groceries and online share the cap"
+     },
+     {
+      "card": "mbnaSmartCash",
+      "earn": {
+       "percent": 2
+      },
+      "cap": {
+       "amount": 500,
+       "period": "month",
+       "combined": true
+      },
+      "note": "Shares the cap with gas"
+     }
+    ]
+   },
+   {
+    "id": "sobeys",
+    "name": "Sobeys-family grocery stores",
+    "offers": [
+     {
+      "card": "scotiaGoldAmex",
+      "earn": {
+       "pointsPerDollar": 6,
+       "program": "scenePlus"
+      },
+      "cap": {
+       "amount": 50000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Scene+ points · Sobeys, Safeway, IGA, FreshCo, Foodland and partners · Confirm in Scotiabank terms"
+     },
+     {
+      "card": "scotiaPassportVI",
+      "earn": {
+       "pointsPerDollar": 3,
+       "program": "scenePlus"
+      },
+      "cap": {
+       "amount": 50000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Scene+ points · Sobeys, Safeway, IGA, FreshCo, Foodland and partners"
+     },
+     {
+      "card": "sceneVisa",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "scenePlus"
+      },
+      "note": "Scene+ points · Sobeys, Safeway, IGA, FreshCo, Foodland and partners"
+     },
+     {
+      "card": "capitalOneQuicksilverWE",
+      "earn": {
+       "percent": 3
+      },
+      "note": "No cap"
+     },
+     {
+      "card": "capitalOneQuicksilverWorld",
+      "earn": {
+       "percent": 3
+      },
+      "note": "No cap"
+     },
+     {
+      "card": "nbWorldElite",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "alaCarte"
+      },
+      "cap": {
+       "amount": 2500,
+       "period": "month",
+       "basis": "total"
+      },
+      "note": "À la carte points · then 2x"
+     },
+     {
+      "card": "desjardinsCashBackWE",
+      "earn": {
+       "percent": 4
+      },
+      "cap": {
+       "amount": 10000,
+       "period": "year"
+      }
+     },
+     {
+      "card": "bmoEclipse",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "bmoRewards"
+      },
+      "cap": {
+       "amount": 6000,
+       "period": "year"
+      },
+      "note": "BMO Rewards points"
+     },
+     {
+      "card": "bmoCashBackMC",
+      "earn": {
+       "percent": 3
+      },
+      "cap": {
+       "amount": 500,
+       "period": "month"
+      }
+     },
+     {
+      "card": "cibcAventuraVI",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aventura"
+      },
+      "note": "Aventura points"
+     },
+     {
+      "card": "cibcAventuraGold",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aventura"
+      },
+      "note": "Aventura points"
+     },
+     {
+      "card": "cibcAventura",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "aventura"
+      },
+      "note": "Aventura points"
+     },
+     {
+      "card": "cibcAeroplanVI",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aeroplan"
+      },
+      "note": "Aeroplan points"
+     },
+     {
+      "card": "cibcAeroplan",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "aeroplan"
+      },
+      "note": "Aeroplan points"
+     },
+     {
+      "card": "cibcDividendVisa",
+      "earn": {
+       "percent": 2
+      }
+     },
+     {
+      "card": "cibcDividendPlatinum",
+      "earn": {
+       "percent": 3
+      }
+     },
+     {
+      "card": "rbcCashBackPreferred",
+      "earn": {
+       "percent": 3
+      },
+      "effectiveFrom": "2026-10-01",
+      "note": "Not Costco or Walmart, which earn the base rate"
+     },
+     {
+      "card": "rbcIonPlus",
+      "earn": {
+       "pointsPerDollar": 3,
+       "program": "avionPremium"
+      },
+      "note": "Avion Premium points"
+     },
+     {
+      "card": "rbcIon",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "avionPremium"
+      },
+      "note": "Avion Premium points"
+     },
+     {
+      "card": "tdAeroplanVI",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aeroplan"
+      },
+      "cap": {
+       "amount": 80000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Aeroplan points"
+     },
+     {
+      "card": "tdAeroplanPrivilege",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aeroplan"
+      },
+      "cap": {
+       "amount": 100000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Aeroplan points · Confirm in TD terms"
+     },
+     {
+      "card": "tdAeroplanPlatinum",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "aeroplan"
+      },
+      "cap": {
+       "amount": 80000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Aeroplan points · Confirm in TD terms"
+     },
+     {
+      "card": "tdFirstClass",
+      "earn": {
+       "pointsPerDollar": 6,
+       "program": "tdRewards"
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year"
+      },
+      "note": "TD Rewards points · Confirm in TD terms"
+     },
+     {
+      "card": "tdRewardsVisa",
+      "earn": {
+       "pointsPerDollar": 3,
+       "program": "tdRewards"
+      },
+      "cap": {
+       "amount": 5000,
+       "period": "year"
+      },
+      "note": "TD Rewards points · Confirm in TD terms"
+     },
+     {
+      "card": "tdCashBack",
+      "earn": {
+       "percent": 1
+      },
+      "cap": {
+       "amount": 5000,
+       "period": "year"
+      },
+      "note": "Confirm in TD terms"
+     },
+     {
+      "card": "scotiaMomentum",
+      "earn": {
+       "percent": 2
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Confirm in Scotiabank terms"
+     },
+     {
+      "card": "scotiaMomentumNoFee",
+      "earn": {
+       "percent": 1
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year",
+       "combined": true
+      }
+     },
+     {
+      "card": "amexSimplyCashPreferred",
+      "earn": {
+       "percent": 4
+      },
+      "cap": {
+       "amount": 30000,
+       "period": "year"
+      },
+      "note": "Stand-alone stores in Canada"
+     },
+     {
+      "card": "amexSimplyCash",
+      "earn": {
+       "percent": 2
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year"
+      },
+      "note": "Stand-alone stores in Canada"
+     },
+     {
+      "card": "cibcDividendVI",
+      "earn": {
+       "percent": 4
+      }
+     },
+     {
+      "card": "tdVisaInfinite",
+      "earn": {
+       "percent": 3
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year"
+      },
+      "note": "Confirm in TD terms"
+     },
+     {
+      "card": "triangleWEMC",
+      "earn": {
+       "percent": 3
+      },
+      "cap": {
+       "amount": 12000,
+       "period": "year"
+      },
+      "note": "CT Money · excludes Costco and Walmart"
+     },
+     {
+      "card": "amexGold",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "membershipRewards"
+      },
+      "note": "MR points · in Canada"
+     },
+     {
+      "card": "rbcCashBackMC",
+      "earn": {
+       "percent": 2
+      },
+      "note": "Not Costco or Walmart"
+     },
+     {
+      "card": "simpliiVisa",
+      "earn": {
+       "percent": 1.5
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year",
+       "combined": true
+      }
+     },
+     {
+      "card": "amexCobalt",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "membershipRewards"
+      },
+      "cap": {
+       "amount": 2500,
+       "period": "month",
+       "combined": true
+      },
+      "note": "MR points · in Canada · then 1 pt/$1 · Confirm in Amex terms"
+     },
+     {
+      "card": "tangerineMC",
+      "earn": {
+       "percent": 2
+      },
+      "chosen": "groceries",
+      "note": "Your pick"
+     },
+     {
+      "card": "tangerineWorldMC",
+      "earn": {
+       "percent": 2
+      },
+      "chosen": "groceries",
+      "note": "Your pick"
+     },
+     {
+      "card": "tangerineWE",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "scenePlus"
+      },
+      "chosen": "groceries",
+      "note": "Scene+ points · your pick"
+     },
+     {
+      "card": "scotiaVI",
+      "earn": {
+       "percent": 4
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year",
+       "combined": true
+      }
+     },
+     {
+      "card": "bmoCashBackWE",
+      "earn": {
+       "percent": 5
+      },
+      "cap": {
+       "amount": 500,
+       "period": "month"
+      }
+     },
+     {
+      "card": "mbnaWE",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "mbnaRewards"
+      },
+      "cap": {
+       "amount": 50000,
+       "period": "year"
+      },
+      "note": "MBNA Rewards points"
+     },
+     {
+      "card": "triangleMC",
+      "earn": {
+       "percent": 1.5
+      },
+      "cap": {
+       "amount": 12000,
+       "period": "year"
+      },
+      "note": "CT Money · excludes Costco and Walmart"
+     },
+     {
+      "card": "bmoEclipsePrivilege",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "bmoRewards"
+      },
+      "cap": {
+       "amount": 20000,
+       "period": "year"
+      },
+      "note": "BMO Rewards points"
+     },
+     {
+      "card": "bmoEclipseRise",
+      "earn": {
+       "pointsPerDollar": 2.5,
+       "program": "bmoRewards"
+      },
+      "cap": {
+       "amount": 5000,
+       "period": "year"
+      },
+      "note": "BMO Rewards points · 5 points per $2"
+     },
+     {
+      "card": "bmoBlueRewards",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "blueRewards"
+      },
+      "cap": {
+       "amount": 500,
+       "period": "month"
+      },
+      "note": "Blue Points"
+     },
+     {
+      "card": "bmoBlueRewardsWE",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "blueRewards"
+      },
+      "cap": {
+       "amount": 500,
+       "period": "month"
+      },
+      "note": "Blue Points"
+     },
+     {
+      "card": "bmoVIPorter",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "viporter"
+      },
+      "cap": {
+       "amount": 5000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "VIPorter points · shared with dining"
+     },
+     {
+      "card": "bmoVIPorterWorld",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "viporter"
+      },
+      "cap": {
+       "amount": 5000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "VIPorter points · shared with dining"
+     },
+     {
+      "card": "bmoVIPorterWE",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "viporter"
+      },
+      "cap": {
+       "amount": 10000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "VIPorter points · shared with dining"
+     },
+     {
+      "card": "desjardinsOdysseyWE",
+      "earn": {
+       "percent": 3
+      },
+      "cap": {
+       "amount": 10000,
+       "period": "year"
+      }
+     },
+     {
+      "card": "desjardinsOdysseyVIP",
+      "earn": {
+       "percent": 3
+      }
+     },
+     {
+      "card": "nbEcho",
+      "earn": {
+       "percent": 1.5
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Gas, groceries and online share the cap"
+     },
+     {
+      "card": "mbnaSmartCash",
+      "earn": {
+       "percent": 2
+      },
+      "cap": {
+       "amount": 500,
+       "period": "month",
+       "combined": true
+      },
+      "note": "Shares the cap with gas"
+     }
+    ]
+   },
+   {
+    "id": "entertainment",
+    "name": "Entertainment",
+    "offers": [
+     {
+      "card": "desjardinsOdysseyWE",
+      "earn": {
+       "percent": 2
+      }
+     },
+     {
+      "card": "desjardinsOdysseyVIP",
+      "earn": {
+       "percent": 4
+      }
+     },
+     {
+      "card": "tangerineMC",
+      "earn": {
+       "percent": 2
+      },
+      "chosen": "entertainment",
+      "note": "Your pick"
+     },
+     {
+      "card": "tangerineWorldMC",
+      "earn": {
+       "percent": 2
+      },
+      "chosen": "entertainment",
+      "note": "Your pick"
+     },
+     {
+      "card": "tangerineWE",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "scenePlus"
+      },
+      "chosen": "entertainment",
+      "note": "Scene+ points · your pick"
+     },
+     {
+      "card": "desjardinsCashBackWE",
+      "earn": {
+       "percent": 3
+      }
+     },
+     {
+      "card": "desjardinsCashBackVisa",
+      "earn": {
+       "percent": 2
+      }
+     },
+     {
+      "card": "desjardinsCashBackMC",
+      "earn": {
+       "percent": 2
+      }
+     },
+     {
+      "card": "scotiaGoldAmex",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "scenePlus"
+      },
+      "cap": {
+       "amount": 50000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Scene+ points · in Canada · Confirm in Scotiabank terms"
+     },
+     {
+      "card": "scotiaPassportVI",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "scenePlus"
+      },
+      "cap": {
+       "amount": 50000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Scene+ points"
+     },
+     {
+      "card": "bmoAscend",
+      "earn": {
+       "pointsPerDollar": 3,
+       "program": "bmoRewards"
+      },
+      "cap": {
+       "amount": 10000,
+       "period": "year"
+      },
+      "note": "BMO Rewards points"
+     }
+    ]
+   },
+   {
+    "id": "loblaw",
+    "name": "Loblaw grocery stores",
+    "offers": [
+     {
+      "card": "pcInsidersWE",
+      "earn": {
+       "pointsPerDollar": 40,
+       "program": "pcOptimum"
+      },
+      "note": "PC Optimum points · Loblaw banner grocery stores"
+     },
+     {
+      "card": "pcWEMC",
+      "earn": {
+       "pointsPerDollar": 30,
+       "program": "pcOptimum"
+      },
+      "note": "PC Optimum points · Loblaws, No Frills, Real Canadian Superstore and others"
+     },
+     {
+      "card": "pcWorldMC",
+      "earn": {
+       "pointsPerDollar": 20,
+       "program": "pcOptimum"
+      },
+      "note": "PC Optimum points · Loblaws, No Frills, Real Canadian Superstore and others"
+     },
+     {
+      "card": "capitalOneQuicksilverWE",
+      "earn": {
+       "percent": 3
+      },
+      "note": "No cap"
+     },
+     {
+      "card": "capitalOneQuicksilverWorld",
+      "earn": {
+       "percent": 3
+      },
+      "note": "No cap"
+     },
+     {
+      "card": "nbWorldElite",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "alaCarte"
+      },
+      "cap": {
+       "amount": 2500,
+       "period": "month",
+       "basis": "total"
+      },
+      "note": "À la carte points · then 2x"
+     },
+     {
+      "card": "desjardinsCashBackWE",
+      "earn": {
+       "percent": 4
+      },
+      "cap": {
+       "amount": 10000,
+       "period": "year"
+      }
+     },
+     {
+      "card": "bmoEclipse",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "bmoRewards"
+      },
+      "cap": {
+       "amount": 6000,
+       "period": "year"
+      },
+      "note": "BMO Rewards points"
+     },
+     {
+      "card": "bmoCashBackMC",
+      "earn": {
+       "percent": 3
+      },
+      "cap": {
+       "amount": 500,
+       "period": "month"
+      }
+     },
+     {
+      "card": "cibcAventuraVI",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aventura"
+      },
+      "note": "Aventura points"
+     },
+     {
+      "card": "cibcAventuraGold",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aventura"
+      },
+      "note": "Aventura points"
+     },
+     {
+      "card": "cibcAventura",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "aventura"
+      },
+      "note": "Aventura points"
+     },
+     {
+      "card": "cibcAeroplanVI",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aeroplan"
+      },
+      "note": "Aeroplan points"
+     },
+     {
+      "card": "cibcAeroplan",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "aeroplan"
+      },
+      "note": "Aeroplan points"
+     },
+     {
+      "card": "cibcDividendVisa",
+      "earn": {
+       "percent": 2
+      }
+     },
+     {
+      "card": "cibcDividendPlatinum",
+      "earn": {
+       "percent": 3
+      }
+     },
+     {
+      "card": "rbcCashBackPreferred",
+      "earn": {
+       "percent": 3
+      },
+      "effectiveFrom": "2026-10-01",
+      "note": "Not Costco or Walmart, which earn the base rate"
+     },
+     {
+      "card": "rbcIonPlus",
+      "earn": {
+       "pointsPerDollar": 3,
+       "program": "avionPremium"
+      },
+      "note": "Avion Premium points"
+     },
+     {
+      "card": "rbcIon",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "avionPremium"
+      },
+      "note": "Avion Premium points"
+     },
+     {
+      "card": "tdAeroplanVI",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aeroplan"
+      },
+      "cap": {
+       "amount": 80000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Aeroplan points"
+     },
+     {
+      "card": "tdAeroplanPrivilege",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aeroplan"
+      },
+      "cap": {
+       "amount": 100000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Aeroplan points · Confirm in TD terms"
+     },
+     {
+      "card": "tdAeroplanPlatinum",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "aeroplan"
+      },
+      "cap": {
+       "amount": 80000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Aeroplan points · Confirm in TD terms"
+     },
+     {
+      "card": "tdFirstClass",
+      "earn": {
+       "pointsPerDollar": 6,
+       "program": "tdRewards"
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year"
+      },
+      "note": "TD Rewards points · Confirm in TD terms"
+     },
+     {
+      "card": "tdRewardsVisa",
+      "earn": {
+       "pointsPerDollar": 3,
+       "program": "tdRewards"
+      },
+      "cap": {
+       "amount": 5000,
+       "period": "year"
+      },
+      "note": "TD Rewards points · Confirm in TD terms"
+     },
+     {
+      "card": "tdCashBack",
+      "earn": {
+       "percent": 1
+      },
+      "cap": {
+       "amount": 5000,
+       "period": "year"
+      },
+      "note": "Confirm in TD terms"
+     },
+     {
+      "card": "scotiaGoldAmex",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "scenePlus"
+      },
+      "cap": {
+       "amount": 50000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Scene+ points · other grocery stores · Confirm in Scotiabank terms"
+     },
+     {
+      "card": "scotiaPassportVI",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "scenePlus"
+      },
+      "cap": {
+       "amount": 50000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Scene+ points · other grocery stores · Not stated on Scotiabank page; confirm"
+     },
+     {
+      "card": "scotiaMomentum",
+      "earn": {
+       "percent": 2
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Confirm in Scotiabank terms"
+     },
+     {
+      "card": "scotiaMomentumNoFee",
+      "earn": {
+       "percent": 1
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year",
+       "combined": true
+      }
+     },
+     {
+      "card": "amexSimplyCashPreferred",
+      "earn": {
+       "percent": 4
+      },
+      "cap": {
+       "amount": 30000,
+       "period": "year"
+      },
+      "note": "Stand-alone stores in Canada"
+     },
+     {
+      "card": "amexSimplyCash",
+      "earn": {
+       "percent": 2
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year"
+      },
+      "note": "Stand-alone stores in Canada"
+     },
+     {
+      "card": "cibcDividendVI",
+      "earn": {
+       "percent": 4
+      }
+     },
+     {
+      "card": "tdVisaInfinite",
+      "earn": {
+       "percent": 3
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year"
+      },
+      "note": "Confirm in TD terms"
+     },
+     {
+      "card": "triangleWEMC",
+      "earn": {
+       "percent": 3
+      },
+      "cap": {
+       "amount": 12000,
+       "period": "year"
+      },
+      "note": "CT Money · excludes Costco and Walmart"
+     },
+     {
+      "card": "amexGold",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "membershipRewards"
+      },
+      "note": "MR points · in Canada"
+     },
+     {
+      "card": "rbcCashBackMC",
+      "earn": {
+       "percent": 2
+      },
+      "note": "Not Costco or Walmart"
+     },
+     {
+      "card": "simpliiVisa",
+      "earn": {
+       "percent": 1.5
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year",
+       "combined": true
+      }
+     },
+     {
+      "card": "amexCobalt",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "membershipRewards"
+      },
+      "cap": {
+       "amount": 2500,
+       "period": "month",
+       "combined": true
+      },
+      "note": "MR points · in Canada · then 1 pt/$1 · Confirm in Amex terms"
+     },
+     {
+      "card": "tangerineMC",
+      "earn": {
+       "percent": 2
+      },
+      "chosen": "groceries",
+      "note": "Your pick"
+     },
+     {
+      "card": "tangerineWorldMC",
+      "earn": {
+       "percent": 2
+      },
+      "chosen": "groceries",
+      "note": "Your pick"
+     },
+     {
+      "card": "tangerineWE",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "scenePlus"
+      },
+      "chosen": "groceries",
+      "note": "Scene+ points · your pick"
+     },
+     {
+      "card": "scotiaVI",
+      "earn": {
+       "percent": 4
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year",
+       "combined": true
+      }
+     },
+     {
+      "card": "bmoCashBackWE",
+      "earn": {
+       "percent": 5
+      },
+      "cap": {
+       "amount": 500,
+       "period": "month"
+      }
+     },
+     {
+      "card": "mbnaWE",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "mbnaRewards"
+      },
+      "cap": {
+       "amount": 50000,
+       "period": "year"
+      },
+      "note": "MBNA Rewards points"
+     },
+     {
+      "card": "triangleMC",
+      "earn": {
+       "percent": 1.5
+      },
+      "cap": {
+       "amount": 12000,
+       "period": "year"
+      },
+      "note": "CT Money · excludes Costco and Walmart"
+     },
+     {
+      "card": "bmoEclipsePrivilege",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "bmoRewards"
+      },
+      "cap": {
+       "amount": 20000,
+       "period": "year"
+      },
+      "note": "BMO Rewards points"
+     },
+     {
+      "card": "bmoEclipseRise",
+      "earn": {
+       "pointsPerDollar": 2.5,
+       "program": "bmoRewards"
+      },
+      "cap": {
+       "amount": 5000,
+       "period": "year"
+      },
+      "note": "BMO Rewards points · 5 points per $2"
+     },
+     {
+      "card": "bmoBlueRewards",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "blueRewards"
+      },
+      "cap": {
+       "amount": 500,
+       "period": "month"
+      },
+      "note": "Blue Points"
+     },
+     {
+      "card": "bmoBlueRewardsWE",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "blueRewards"
+      },
+      "cap": {
+       "amount": 500,
+       "period": "month"
+      },
+      "note": "Blue Points"
+     },
+     {
+      "card": "bmoVIPorter",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "viporter"
+      },
+      "cap": {
+       "amount": 5000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "VIPorter points · shared with dining"
+     },
+     {
+      "card": "bmoVIPorterWorld",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "viporter"
+      },
+      "cap": {
+       "amount": 5000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "VIPorter points · shared with dining"
+     },
+     {
+      "card": "bmoVIPorterWE",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "viporter"
+      },
+      "cap": {
+       "amount": 10000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "VIPorter points · shared with dining"
+     },
+     {
+      "card": "desjardinsOdysseyWE",
+      "earn": {
+       "percent": 3
+      },
+      "cap": {
+       "amount": 10000,
+       "period": "year"
+      }
+     },
+     {
+      "card": "desjardinsOdysseyVIP",
+      "earn": {
+       "percent": 3
+      }
+     },
+     {
+      "card": "nbEcho",
+      "earn": {
+       "percent": 1.5
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Gas, groceries and online share the cap"
+     },
+     {
+      "card": "mbnaSmartCash",
+      "earn": {
+       "percent": 2
+      },
+      "cap": {
+       "amount": 500,
+       "period": "month",
+       "combined": true
+      },
+      "note": "Shares the cap with gas"
+     }
+    ]
+   },
+   {
+    "id": "walmart-stores",
+    "name": "Walmart stores",
+    "shortNote": "Not groceries for most cards",
+    "offers": [
+     {
+      "card": "walmartWorldMC",
+      "earn": {
+       "pointsPerDollar": 3,
+       "program": "walmartRewardDollars"
+      },
+      "note": "Walmart Reward Dollars · only spendable at Walmart"
+     },
+     {
+      "card": "walmartMC",
+      "earn": {
+       "pointsPerDollar": 3,
+       "program": "walmartRewardDollars"
+      },
+      "note": "Walmart Reward Dollars · only spendable at Walmart"
+     }
+    ]
+   },
+   {
+    "id": "walmart-online",
+    "name": "Walmart.ca",
+    "offers": [
+     {
+      "card": "walmartWorldMC",
+      "earn": {
+       "pointsPerDollar": 3,
+       "program": "walmartRewardDollars"
+      },
+      "note": "Walmart Reward Dollars · only spendable at Walmart"
+     },
+     {
+      "card": "walmartMC",
+      "earn": {
+       "pointsPerDollar": 3,
+       "program": "walmartRewardDollars"
+      },
+      "note": "Walmart Reward Dollars · only spendable at Walmart"
+     }
+    ]
+   },
+   {
+    "id": "gas-other",
+    "name": "Gas at other stations",
+    "offers": [
+     {
+      "card": "capitalOneQuicksilverWE",
+      "earn": {
+       "percent": 3
+      },
+      "note": "No cap · may not apply at gas or EV stations affiliated with supermarkets, supercentres or wholesale clubs"
+     },
+     {
+      "card": "capitalOneQuicksilverWorld",
+      "earn": {
+       "percent": 3
+      },
+      "note": "No cap · may not apply at gas or EV stations affiliated with supermarkets, supercentres or wholesale clubs"
+     },
+     {
+      "card": "nbWorldElite",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "alaCarte"
+      },
+      "note": "À la carte points"
+     },
+     {
+      "card": "bmoEclipse",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "bmoRewards"
+      },
+      "cap": {
+       "amount": 20000,
+       "period": "year"
+      },
+      "note": "BMO Rewards points"
+     },
+     {
+      "card": "cibcAventuraVI",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aventura"
+      },
+      "note": "Aventura points"
+     },
+     {
+      "card": "cibcAventuraGold",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aventura"
+      },
+      "note": "Aventura points"
+     },
+     {
+      "card": "cibcAventura",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "aventura"
+      },
+      "note": "Aventura points"
+     },
+     {
+      "card": "cibcAeroplanVI",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aeroplan"
+      },
+      "note": "Aeroplan points"
+     },
+     {
+      "card": "cibcAeroplan",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "aeroplan"
+      },
+      "note": "Aeroplan points"
+     },
+     {
+      "card": "cibcDividendVisa",
+      "earn": {
+       "percent": 1
+      }
+     },
+     {
+      "card": "cibcDividendPlatinum",
+      "earn": {
+       "percent": 3
+      }
+     },
+     {
+      "card": "rbcCashBackPreferred",
+      "earn": {
+       "percent": 3
+      },
+      "effectiveFrom": "2026-10-01"
+     },
+     {
+      "card": "rbcIonPlus",
+      "earn": {
+       "pointsPerDollar": 3,
+       "program": "avionPremium"
+      },
+      "note": "Avion Premium points"
+     },
+     {
+      "card": "rbcIon",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "avionPremium"
+      },
+      "note": "Avion Premium points"
+     },
+     {
+      "card": "tdAeroplanVI",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aeroplan"
+      },
+      "cap": {
+       "amount": 80000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Aeroplan points"
+     },
+     {
+      "card": "tdAeroplanPrivilege",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aeroplan"
+      },
+      "cap": {
+       "amount": 100000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Aeroplan points · Confirm in TD terms"
+     },
+     {
+      "card": "tdAeroplanPlatinum",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "aeroplan"
+      },
+      "cap": {
+       "amount": 80000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Aeroplan points · Confirm in TD terms"
+     },
+     {
+      "card": "tdCashBack",
+      "earn": {
+       "percent": 1
+      },
+      "cap": {
+       "amount": 5000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Confirm in TD terms"
+     },
+     {
+      "card": "scotiaGoldAmex",
+      "earn": {
+       "pointsPerDollar": 3,
+       "program": "scenePlus"
+      },
+      "cap": {
+       "amount": 50000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Scene+ points · in Canada · Confirm in Scotiabank terms"
+     },
+     {
+      "card": "scotiaMomentum",
+      "earn": {
+       "percent": 2
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Confirm in Scotiabank terms"
+     },
+     {
+      "card": "scotiaMomentumNoFee",
+      "earn": {
+       "percent": 1
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year",
+       "combined": true
+      }
+     },
+     {
+      "card": "amexSimplyCashPreferred",
+      "earn": {
+       "percent": 4
+      },
+      "note": "Stand-alone stores in Canada"
+     },
+     {
+      "card": "amexSimplyCash",
+      "earn": {
+       "percent": 2
+      },
+      "note": "Stand-alone stores in Canada"
+     },
+     {
+      "card": "amexCobalt",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "membershipRewards"
+      },
+      "note": "MR points · in Canada"
+     },
+     {
+      "card": "tangerineMC",
+      "earn": {
+       "percent": 2
+      },
+      "chosen": "gas",
+      "note": "Your pick"
+     },
+     {
+      "card": "tangerineWorldMC",
+      "earn": {
+       "percent": 2
+      },
+      "chosen": "gas",
+      "note": "Your pick"
+     },
+     {
+      "card": "tangerineWE",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "scenePlus"
+      },
+      "chosen": "gas",
+      "note": "Scene+ points · your pick"
+     },
+     {
+      "card": "scotiaVI",
+      "earn": {
+       "percent": 2
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year",
+       "combined": true
+      }
+     },
+     {
+      "card": "bmoCashBackWE",
+      "earn": {
+       "percent": 3
+      },
+      "cap": {
+       "amount": 300,
+       "period": "month",
+       "combined": true
+      }
+     },
+     {
+      "card": "simpliiVisa",
+      "earn": {
+       "percent": 1.5
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year",
+       "combined": true
+      }
+     },
+     {
+      "card": "cibcDividendVI",
+      "earn": {
+       "percent": 4
+      }
+     },
+     {
+      "card": "tdVisaInfinite",
+      "earn": {
+       "percent": 3
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Confirm in TD terms"
+     },
+     {
+      "card": "cibcCostcoMC",
+      "earn": {
+       "percent": 2
+      },
+      "note": "Cap: not stated on CIBC's page; check the card's terms"
+     },
+     {
+      "card": "amexGold",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "membershipRewards"
+      },
+      "note": "MR points · in Canada"
+     },
+     {
+      "card": "rbcCashBackMC",
+      "earn": {
+       "percent": 1
+      }
+     },
+     {
+      "card": "walmartWorldMC",
+      "earn": {
+       "pointsPerDollar": 1.25,
+       "program": "walmartRewardDollars"
+      },
+      "note": "Walmart Reward Dollars · only spendable at Walmart · Not confirmed on Walmart page"
+     },
+     {
+      "card": "bmoEclipsePrivilege",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "bmoRewards"
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year"
+      },
+      "note": "BMO Rewards points"
+     },
+     {
+      "card": "bmoBlueRewards",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "blueRewards"
+      },
+      "cap": {
+       "amount": 500,
+       "period": "month",
+       "combined": true
+      },
+      "note": "Blue Points · shared with EV charging"
+     },
+     {
+      "card": "bmoBlueRewardsWE",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "blueRewards"
+      },
+      "cap": {
+       "amount": 500,
+       "period": "month",
+       "combined": true
+      },
+      "note": "Blue Points · shared with EV charging"
+     },
+     {
+      "card": "bmoVIPorter",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "viporter"
+      },
+      "cap": {
+       "amount": 3000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "VIPorter points · gas and transportation"
+     },
+     {
+      "card": "bmoVIPorterWorld",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "viporter"
+      },
+      "cap": {
+       "amount": 3000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "VIPorter points · gas and transportation"
+     },
+     {
+      "card": "bmoVIPorterWE",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "viporter"
+      },
+      "cap": {
+       "amount": 5000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "VIPorter points · gas and transportation"
+     },
+     {
+      "card": "nbEcho",
+      "earn": {
+       "percent": 1.5
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Gas, groceries and online share the cap"
+     },
+     {
+      "card": "mbnaSmartCash",
+      "earn": {
+       "percent": 2
+      },
+      "cap": {
+       "amount": 500,
+       "period": "month",
+       "combined": true
+      },
+      "note": "Shares the cap with groceries"
+     }
+    ]
+   },
+   {
+    "id": "gas-ct",
+    "name": "Gas at Gas+ / Petro-Canada",
+    "offers": [
+     {
+      "card": "triangleWEMC",
+      "earn": {
+       "centsPerLitre": 5
+      },
+      "note": "CT Money · 7¢/L premium"
+     },
+     {
+      "card": "triangleMC",
+      "earn": {
+       "centsPerLitre": 5
+      },
+      "note": "CT Money"
+     },
+     {
+      "card": "capitalOneQuicksilverWE",
+      "earn": {
+       "percent": 3
+      },
+      "note": "No cap · may not apply at gas or EV stations affiliated with supermarkets, supercentres or wholesale clubs"
+     },
+     {
+      "card": "capitalOneQuicksilverWorld",
+      "earn": {
+       "percent": 3
+      },
+      "note": "No cap · may not apply at gas or EV stations affiliated with supermarkets, supercentres or wholesale clubs"
+     },
+     {
+      "card": "nbWorldElite",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "alaCarte"
+      },
+      "note": "À la carte points"
+     },
+     {
+      "card": "bmoEclipse",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "bmoRewards"
+      },
+      "cap": {
+       "amount": 20000,
+       "period": "year"
+      },
+      "note": "BMO Rewards points"
+     },
+     {
+      "card": "cibcAventuraVI",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aventura"
+      },
+      "note": "Aventura points"
+     },
+     {
+      "card": "cibcAventuraGold",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aventura"
+      },
+      "note": "Aventura points"
+     },
+     {
+      "card": "cibcAventura",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "aventura"
+      },
+      "note": "Aventura points"
+     },
+     {
+      "card": "cibcAeroplanVI",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aeroplan"
+      },
+      "note": "Aeroplan points"
+     },
+     {
+      "card": "cibcAeroplan",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "aeroplan"
+      },
+      "note": "Aeroplan points"
+     },
+     {
+      "card": "cibcDividendVisa",
+      "earn": {
+       "percent": 1
+      }
+     },
+     {
+      "card": "cibcDividendPlatinum",
+      "earn": {
+       "percent": 3
+      }
+     },
+     {
+      "card": "rbcCashBackPreferred",
+      "earn": {
+       "percent": 3
+      },
+      "effectiveFrom": "2026-10-01"
+     },
+     {
+      "card": "rbcIonPlus",
+      "earn": {
+       "pointsPerDollar": 3,
+       "program": "avionPremium"
+      },
+      "note": "Avion Premium points"
+     },
+     {
+      "card": "rbcIon",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "avionPremium"
+      },
+      "note": "Avion Premium points"
+     },
+     {
+      "card": "tdAeroplanVI",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aeroplan"
+      },
+      "cap": {
+       "amount": 80000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Aeroplan points"
+     },
+     {
+      "card": "tdAeroplanPrivilege",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aeroplan"
+      },
+      "cap": {
+       "amount": 100000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Aeroplan points · Confirm in TD terms"
+     },
+     {
+      "card": "tdAeroplanPlatinum",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "aeroplan"
+      },
+      "cap": {
+       "amount": 80000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Aeroplan points · Confirm in TD terms"
+     },
+     {
+      "card": "tdCashBack",
+      "earn": {
+       "percent": 1
+      },
+      "cap": {
+       "amount": 5000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Confirm in TD terms"
+     },
+     {
+      "card": "scotiaGoldAmex",
+      "earn": {
+       "pointsPerDollar": 3,
+       "program": "scenePlus"
+      },
+      "cap": {
+       "amount": 50000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Scene+ points · in Canada · Confirm in Scotiabank terms"
+     },
+     {
+      "card": "scotiaMomentum",
+      "earn": {
+       "percent": 2
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Confirm in Scotiabank terms"
+     },
+     {
+      "card": "scotiaMomentumNoFee",
+      "earn": {
+       "percent": 1
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year",
+       "combined": true
+      }
+     },
+     {
+      "card": "amexSimplyCashPreferred",
+      "earn": {
+       "percent": 4
+      },
+      "note": "Stand-alone stores in Canada"
+     },
+     {
+      "card": "amexSimplyCash",
+      "earn": {
+       "percent": 2
+      },
+      "note": "Stand-alone stores in Canada"
+     },
+     {
+      "card": "amexCobalt",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "membershipRewards"
+      },
+      "note": "MR points · in Canada"
+     },
+     {
+      "card": "tangerineMC",
+      "earn": {
+       "percent": 2
+      },
+      "chosen": "gas",
+      "note": "Your pick"
+     },
+     {
+      "card": "tangerineWorldMC",
+      "earn": {
+       "percent": 2
+      },
+      "chosen": "gas",
+      "note": "Your pick"
+     },
+     {
+      "card": "tangerineWE",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "scenePlus"
+      },
+      "chosen": "gas",
+      "note": "Scene+ points · your pick"
+     },
+     {
+      "card": "scotiaVI",
+      "earn": {
+       "percent": 2
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year",
+       "combined": true
+      }
+     },
+     {
+      "card": "bmoCashBackWE",
+      "earn": {
+       "percent": 3
+      },
+      "cap": {
+       "amount": 300,
+       "period": "month",
+       "combined": true
+      }
+     },
+     {
+      "card": "simpliiVisa",
+      "earn": {
+       "percent": 1.5
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year",
+       "combined": true
+      }
+     },
+     {
+      "card": "cibcDividendVI",
+      "earn": {
+       "percent": 4
+      }
+     },
+     {
+      "card": "tdVisaInfinite",
+      "earn": {
+       "percent": 3
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Confirm in TD terms"
+     },
+     {
+      "card": "cibcCostcoMC",
+      "earn": {
+       "percent": 2
+      },
+      "note": "Cap: not stated on CIBC's page; check the card's terms"
+     },
+     {
+      "card": "amexGold",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "membershipRewards"
+      },
+      "note": "MR points · in Canada"
+     },
+     {
+      "card": "rbcCashBackMC",
+      "earn": {
+       "percent": 1
+      }
+     },
+     {
+      "card": "walmartWorldMC",
+      "earn": {
+       "pointsPerDollar": 1.25,
+       "program": "walmartRewardDollars"
+      },
+      "note": "Walmart Reward Dollars · only spendable at Walmart · Not confirmed on Walmart page"
+     },
+     {
+      "card": "bmoEclipsePrivilege",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "bmoRewards"
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year"
+      },
+      "note": "BMO Rewards points"
+     },
+     {
+      "card": "bmoBlueRewards",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "blueRewards"
+      },
+      "cap": {
+       "amount": 500,
+       "period": "month",
+       "combined": true
+      },
+      "note": "Blue Points · shared with EV charging"
+     },
+     {
+      "card": "bmoBlueRewardsWE",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "blueRewards"
+      },
+      "cap": {
+       "amount": 500,
+       "period": "month",
+       "combined": true
+      },
+      "note": "Blue Points · shared with EV charging"
+     },
+     {
+      "card": "bmoVIPorter",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "viporter"
+      },
+      "cap": {
+       "amount": 3000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "VIPorter points · gas and transportation"
+     },
+     {
+      "card": "bmoVIPorterWorld",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "viporter"
+      },
+      "cap": {
+       "amount": 3000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "VIPorter points · gas and transportation"
+     },
+     {
+      "card": "bmoVIPorterWE",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "viporter"
+      },
+      "cap": {
+       "amount": 5000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "VIPorter points · gas and transportation"
+     },
+     {
+      "card": "nbEcho",
+      "earn": {
+       "percent": 1.5
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Gas, groceries and online share the cap"
+     },
+     {
+      "card": "mbnaSmartCash",
+      "earn": {
+       "percent": 2
+      },
+      "cap": {
+       "amount": 500,
+       "period": "month",
+       "combined": true
+      },
+      "note": "Shares the cap with groceries"
+     }
+    ]
+   },
+   {
+    "id": "gas-esso",
+    "name": "Esso / Mobil gas",
+    "offers": [
+     {
+      "card": "pcInsidersWE",
+      "earn": {
+       "centsPerLitre": 5
+      },
+      "note": "PC Optimum points · 5¢/L, up to 7¢/L with 150 L or more a month"
+     },
+     {
+      "card": "pcWEMC",
+      "earn": {
+       "centsPerLitre": 3
+      },
+      "note": "PC Optimum points · at least 3¢/L"
+     },
+     {
+      "card": "pcWorldMC",
+      "earn": {
+       "centsPerLitre": 3
+      },
+      "note": "PC Optimum points · at least 3¢/L"
+     },
+     {
+      "card": "pcMC",
+      "earn": {
+       "centsPerLitre": 3
+      },
+      "note": "PC Optimum points · at least 3¢/L"
+     },
+     {
+      "card": "capitalOneQuicksilverWE",
+      "earn": {
+       "percent": 3
+      },
+      "note": "No cap · may not apply at gas or EV stations affiliated with supermarkets, supercentres or wholesale clubs"
+     },
+     {
+      "card": "capitalOneQuicksilverWorld",
+      "earn": {
+       "percent": 3
+      },
+      "note": "No cap · may not apply at gas or EV stations affiliated with supermarkets, supercentres or wholesale clubs"
+     },
+     {
+      "card": "nbWorldElite",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "alaCarte"
+      },
+      "note": "À la carte points"
+     },
+     {
+      "card": "bmoEclipse",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "bmoRewards"
+      },
+      "cap": {
+       "amount": 20000,
+       "period": "year"
+      },
+      "note": "BMO Rewards points"
+     },
+     {
+      "card": "cibcAventuraVI",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aventura"
+      },
+      "note": "Aventura points"
+     },
+     {
+      "card": "cibcAventuraGold",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aventura"
+      },
+      "note": "Aventura points"
+     },
+     {
+      "card": "cibcAventura",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "aventura"
+      },
+      "note": "Aventura points"
+     },
+     {
+      "card": "cibcAeroplanVI",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aeroplan"
+      },
+      "note": "Aeroplan points"
+     },
+     {
+      "card": "cibcAeroplan",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "aeroplan"
+      },
+      "note": "Aeroplan points"
+     },
+     {
+      "card": "cibcDividendVisa",
+      "earn": {
+       "percent": 1
+      }
+     },
+     {
+      "card": "cibcDividendPlatinum",
+      "earn": {
+       "percent": 3
+      }
+     },
+     {
+      "card": "rbcCashBackPreferred",
+      "earn": {
+       "percent": 3
+      },
+      "effectiveFrom": "2026-10-01"
+     },
+     {
+      "card": "rbcIonPlus",
+      "earn": {
+       "pointsPerDollar": 3,
+       "program": "avionPremium"
+      },
+      "note": "Avion Premium points"
+     },
+     {
+      "card": "rbcIon",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "avionPremium"
+      },
+      "note": "Avion Premium points"
+     },
+     {
+      "card": "tdAeroplanVI",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aeroplan"
+      },
+      "cap": {
+       "amount": 80000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Aeroplan points"
+     },
+     {
+      "card": "tdAeroplanPrivilege",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aeroplan"
+      },
+      "cap": {
+       "amount": 100000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Aeroplan points · Confirm in TD terms"
+     },
+     {
+      "card": "tdAeroplanPlatinum",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "aeroplan"
+      },
+      "cap": {
+       "amount": 80000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Aeroplan points · Confirm in TD terms"
+     },
+     {
+      "card": "tdCashBack",
+      "earn": {
+       "percent": 1
+      },
+      "cap": {
+       "amount": 5000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Confirm in TD terms"
+     },
+     {
+      "card": "scotiaGoldAmex",
+      "earn": {
+       "pointsPerDollar": 3,
+       "program": "scenePlus"
+      },
+      "cap": {
+       "amount": 50000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Scene+ points · in Canada · Confirm in Scotiabank terms"
+     },
+     {
+      "card": "scotiaMomentum",
+      "earn": {
+       "percent": 2
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Confirm in Scotiabank terms"
+     },
+     {
+      "card": "scotiaMomentumNoFee",
+      "earn": {
+       "percent": 1
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year",
+       "combined": true
+      }
+     },
+     {
+      "card": "amexSimplyCashPreferred",
+      "earn": {
+       "percent": 4
+      },
+      "note": "Stand-alone stores in Canada"
+     },
+     {
+      "card": "amexSimplyCash",
+      "earn": {
+       "percent": 2
+      },
+      "note": "Stand-alone stores in Canada"
+     },
+     {
+      "card": "amexCobalt",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "membershipRewards"
+      },
+      "note": "MR points · in Canada"
+     },
+     {
+      "card": "tangerineMC",
+      "earn": {
+       "percent": 2
+      },
+      "chosen": "gas",
+      "note": "Your pick"
+     },
+     {
+      "card": "tangerineWorldMC",
+      "earn": {
+       "percent": 2
+      },
+      "chosen": "gas",
+      "note": "Your pick"
+     },
+     {
+      "card": "tangerineWE",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "scenePlus"
+      },
+      "chosen": "gas",
+      "note": "Scene+ points · your pick"
+     },
+     {
+      "card": "scotiaVI",
+      "earn": {
+       "percent": 2
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year",
+       "combined": true
+      }
+     },
+     {
+      "card": "bmoCashBackWE",
+      "earn": {
+       "percent": 3
+      },
+      "cap": {
+       "amount": 300,
+       "period": "month",
+       "combined": true
+      }
+     },
+     {
+      "card": "simpliiVisa",
+      "earn": {
+       "percent": 1.5
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year",
+       "combined": true
+      }
+     },
+     {
+      "card": "cibcDividendVI",
+      "earn": {
+       "percent": 4
+      }
+     },
+     {
+      "card": "tdVisaInfinite",
+      "earn": {
+       "percent": 3
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Confirm in TD terms"
+     },
+     {
+      "card": "cibcCostcoMC",
+      "earn": {
+       "percent": 2
+      },
+      "note": "Cap: not stated on CIBC's page; check the card's terms"
+     },
+     {
+      "card": "amexGold",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "membershipRewards"
+      },
+      "note": "MR points · in Canada"
+     },
+     {
+      "card": "rbcCashBackMC",
+      "earn": {
+       "percent": 1
+      }
+     },
+     {
+      "card": "walmartWorldMC",
+      "earn": {
+       "pointsPerDollar": 1.25,
+       "program": "walmartRewardDollars"
+      },
+      "note": "Walmart Reward Dollars · only spendable at Walmart · Not confirmed on Walmart page"
+     },
+     {
+      "card": "bmoEclipsePrivilege",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "bmoRewards"
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year"
+      },
+      "note": "BMO Rewards points"
+     },
+     {
+      "card": "bmoBlueRewards",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "blueRewards"
+      },
+      "cap": {
+       "amount": 500,
+       "period": "month",
+       "combined": true
+      },
+      "note": "Blue Points · shared with EV charging"
+     },
+     {
+      "card": "bmoBlueRewardsWE",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "blueRewards"
+      },
+      "cap": {
+       "amount": 500,
+       "period": "month",
+       "combined": true
+      },
+      "note": "Blue Points · shared with EV charging"
+     },
+     {
+      "card": "bmoVIPorter",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "viporter"
+      },
+      "cap": {
+       "amount": 3000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "VIPorter points · gas and transportation"
+     },
+     {
+      "card": "bmoVIPorterWorld",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "viporter"
+      },
+      "cap": {
+       "amount": 3000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "VIPorter points · gas and transportation"
+     },
+     {
+      "card": "bmoVIPorterWE",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "viporter"
+      },
+      "cap": {
+       "amount": 5000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "VIPorter points · gas and transportation"
+     },
+     {
+      "card": "nbEcho",
+      "earn": {
+       "percent": 1.5
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Gas, groceries and online share the cap"
+     },
+     {
+      "card": "mbnaSmartCash",
+      "earn": {
+       "percent": 2
+      },
+      "cap": {
+       "amount": 500,
+       "period": "month",
+       "combined": true
+      },
+      "note": "Shares the cap with groceries"
+     }
+    ]
+   },
+   {
+    "id": "gas-costco",
+    "name": "Gas at Costco",
+    "offers": [
+     {
+      "card": "bmoBlueRewards",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "blueRewards"
+      },
+      "cap": {
+       "amount": 500,
+       "period": "month",
+       "combined": true
+      },
+      "note": "Blue Points · shared with gas"
+     },
+     {
+      "card": "bmoBlueRewardsWE",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "blueRewards"
+      },
+      "cap": {
+       "amount": 500,
+       "period": "month",
+       "combined": true
+      },
+      "note": "Blue Points · shared with gas"
+     },
+     {
+      "card": "cibcCostcoMC",
+      "earn": {
+       "percent": 3
+      },
+      "note": "Cap: not stated on CIBC's page; check the card's terms"
+     }
+    ],
+    "acceptedNetworks": [
+     "Mastercard"
+    ],
+    "networkNote": "Costco only accepts Mastercard",
+    "shortNote": "Mastercard only",
+    "noAcceptedCardMessage": "No accepted card: Costco takes Mastercard and debit"
+   },
+   {
+    "id": "ev-charging",
+    "name": "EV charging",
+    "offers": [
+     {
+      "card": "cibcCostcoMC",
+      "earn": {
+       "percent": 2
+      },
+      "note": "Cap: not stated on CIBC's page; check the card's terms"
+     },
+     {
+      "card": "bmoBlueRewards",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "blueRewards"
+      },
+      "cap": {
+       "amount": 500,
+       "period": "month",
+       "combined": true
+      },
+      "note": "Blue Points · shared with gas"
+     },
+     {
+      "card": "bmoBlueRewardsWE",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "blueRewards"
+      },
+      "cap": {
+       "amount": 500,
+       "period": "month",
+       "combined": true
+      },
+      "note": "Blue Points · shared with gas"
+     },
+     {
+      "card": "nbWorldElite",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "alaCarte"
+      },
+      "note": "À la carte points · EV charging"
+     },
+     {
+      "card": "cibcDividendVI",
+      "earn": {
+       "percent": 4
+      }
+     },
+     {
+      "card": "cibcDividendPlatinum",
+      "earn": {
+       "percent": 3
+      }
+     },
+     {
+      "card": "tdVisaInfinite",
+      "earn": {
+       "percent": 3
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Confirm in TD terms"
+     },
+     {
+      "card": "rbcCashBackMC",
+      "earn": {
+       "percent": 1
+      }
+     },
+     {
+      "card": "capitalOneQuicksilverWE",
+      "earn": {
+       "percent": 3
+      },
+      "note": "No cap · may not apply at stations affiliated with supermarkets, supercentres or wholesale clubs"
+     },
+     {
+      "card": "capitalOneQuicksilverWorld",
+      "earn": {
+       "percent": 3
+      },
+      "note": "No cap · may not apply at stations affiliated with supermarkets, supercentres or wholesale clubs"
+     },
+     {
+      "card": "scotiaVI",
+      "earn": {
+       "percent": 2
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year",
+       "combined": true
+      }
+     },
+     {
+      "card": "bmoCashBackWE",
+      "earn": {
+       "percent": 3
+      },
+      "cap": {
+       "amount": 300,
+       "period": "month",
+       "combined": true
+      }
+     },
+     {
+      "card": "tdCashBack",
+      "earn": {
+       "percent": 1
+      },
+      "cap": {
+       "amount": 5000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Confirm in TD terms"
+     },
+     {
+      "card": "rbcCashBackPreferred",
+      "earn": {
+       "percent": 3
+      },
+      "effectiveFrom": "2026-10-01"
+     },
+     {
+      "card": "rbcIonPlus",
+      "earn": {
+       "pointsPerDollar": 3,
+       "program": "avionPremium"
+      },
+      "note": "Avion Premium points"
+     },
+     {
+      "card": "rbcIon",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "avionPremium"
+      },
+      "note": "Avion Premium points"
+     },
+     {
+      "card": "cibcAventuraVI",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aventura"
+      },
+      "note": "Aventura points"
+     },
+     {
+      "card": "cibcAventuraGold",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aventura"
+      },
+      "note": "Aventura points"
+     },
+     {
+      "card": "cibcAventura",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "aventura"
+      },
+      "note": "Aventura points"
+     },
+     {
+      "card": "cibcAeroplanVI",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aeroplan"
+      },
+      "note": "Aeroplan points"
+     },
+     {
+      "card": "cibcAeroplan",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "aeroplan"
+      },
+      "note": "Aeroplan points"
+     },
+     {
+      "card": "cibcDividendVisa",
+      "earn": {
+       "percent": 1
+      }
+     },
+     {
+      "card": "tdAeroplanVI",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aeroplan"
+      },
+      "cap": {
+       "amount": 80000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Aeroplan points · Confirm in TD terms"
+     },
+     {
+      "card": "tdAeroplanPrivilege",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aeroplan"
+      },
+      "cap": {
+       "amount": 100000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Aeroplan points · Confirm in TD terms"
+     },
+     {
+      "card": "tdAeroplanPlatinum",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "aeroplan"
+      },
+      "cap": {
+       "amount": 80000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Aeroplan points · Confirm in TD terms"
+     }
+    ]
+   },
+   {
+    "id": "transit",
+    "name": "Transit & rideshare",
+    "offers": [
+     {
+      "card": "desjardinsOdysseyWE",
+      "earn": {
+       "percent": 2
+      },
+      "note": "Public transit"
+     },
+     {
+      "card": "desjardinsOdysseyVIP",
+      "earn": {
+       "percent": 4
+      },
+      "note": "Public transit"
+     },
+     {
+      "card": "bmoVIPorter",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "viporter"
+      },
+      "cap": {
+       "amount": 3000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "VIPorter points · gas and transportation"
+     },
+     {
+      "card": "bmoVIPorterWorld",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "viporter"
+      },
+      "cap": {
+       "amount": 3000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "VIPorter points · gas and transportation"
+     },
+     {
+      "card": "bmoVIPorterWE",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "viporter"
+      },
+      "cap": {
+       "amount": 5000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "VIPorter points · gas and transportation"
+     },
+     {
+      "card": "desjardinsCashBackWE",
+      "earn": {
+       "percent": 3
+      },
+      "note": "Public transit"
+     },
+     {
+      "card": "desjardinsCashBackVisa",
+      "earn": {
+       "percent": 2
+      },
+      "note": "Public transit"
+     },
+     {
+      "card": "desjardinsCashBackMC",
+      "earn": {
+       "percent": 2
+      },
+      "note": "Public transit"
+     },
+     {
+      "card": "tdVisaInfinite",
+      "earn": {
+       "percent": 3
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year"
+      },
+      "note": "Transit · Confirm in TD terms"
+     },
+     {
+      "card": "cibcDividendVI",
+      "earn": {
+       "percent": 2
+      },
+      "note": "Transportation"
+     },
+     {
+      "card": "cibcDividendPlatinum",
+      "earn": {
+       "percent": 2
+      },
+      "note": "Transportation"
+     },
+     {
+      "card": "rbcCashBackMC",
+      "earn": {
+       "percent": 1
+      }
+     },
+     {
+      "card": "amexCobalt",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "membershipRewards"
+      },
+      "note": "MR points · in Canada"
+     },
+     {
+      "card": "tangerineMC",
+      "earn": {
+       "percent": 2
+      },
+      "chosen": "transit",
+      "note": "Your pick"
+     },
+     {
+      "card": "tangerineWorldMC",
+      "earn": {
+       "percent": 2
+      },
+      "chosen": "transit",
+      "note": "Your pick"
+     },
+     {
+      "card": "tangerineWE",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "scenePlus"
+      },
+      "chosen": "transit",
+      "note": "Scene+ points · your pick"
+     },
+     {
+      "card": "scotiaVI",
+      "earn": {
+       "percent": 2
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year",
+       "combined": true
+      }
+     },
+     {
+      "card": "bmoCashBackWE",
+      "earn": {
+       "percent": 4
+      },
+      "cap": {
+       "amount": 300,
+       "period": "month"
+      }
+     },
+     {
+      "card": "scotiaGoldAmex",
+      "earn": {
+       "pointsPerDollar": 3,
+       "program": "scenePlus"
+      },
+      "cap": {
+       "amount": 50000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Scene+ points · in Canada · Confirm in Scotiabank terms"
+     },
+     {
+      "card": "scotiaPassportVI",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "scenePlus"
+      },
+      "cap": {
+       "amount": 50000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Scene+ points · daily transit incl. rideshare"
+     },
+     {
+      "card": "scotiaMomentum",
+      "earn": {
+       "percent": 2
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Confirm in Scotiabank terms"
+     },
+     {
+      "card": "scotiaMomentumNoFee",
+      "earn": {
+       "percent": 1
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year",
+       "combined": true
+      }
+     },
+     {
+      "card": "tdFirstClass",
+      "earn": {
+       "pointsPerDollar": 6,
+       "program": "tdRewards"
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year"
+      },
+      "note": "TD Rewards points · public transit · Confirm in TD terms"
+     },
+     {
+      "card": "tdRewardsVisa",
+      "earn": {
+       "pointsPerDollar": 3,
+       "program": "tdRewards"
+      },
+      "cap": {
+       "amount": 5000,
+       "period": "year"
+      },
+      "note": "TD Rewards points · public transit · Confirm in TD terms"
+     },
+     {
+      "card": "tdCashBack",
+      "earn": {
+       "percent": 1
+      },
+      "cap": {
+       "amount": 5000,
+       "period": "year"
+      },
+      "note": "Public transit · Confirm in TD terms"
+     },
+     {
+      "card": "rbcCashBackPreferred",
+      "earn": {
+       "percent": 3
+      },
+      "effectiveFrom": "2026-10-01"
+     },
+     {
+      "card": "rbcIonPlus",
+      "earn": {
+       "pointsPerDollar": 3,
+       "program": "avionPremium"
+      },
+      "note": "Avion Premium points"
+     },
+     {
+      "card": "rbcIon",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "avionPremium"
+      },
+      "note": "Avion Premium points"
+     },
+     {
+      "card": "cibcDividendVisa",
+      "earn": {
+       "percent": 1
+      },
+      "note": "Transportation"
+     },
+     {
+      "card": "bmoEclipse",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "bmoRewards"
+      },
+      "cap": {
+       "amount": 20000,
+       "period": "year"
+      },
+      "note": "BMO Rewards points"
+     },
+     {
+      "card": "tdAeroplanPrivilege",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aeroplan"
+      },
+      "cap": {
+       "amount": 100000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Aeroplan points · Confirm in TD terms"
+     }
+    ]
+   },
+   {
+    "id": "recurring-bills",
+    "name": "Recurring bills",
+    "offers": [
+     {
+      "card": "mbnaWE",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "mbnaRewards"
+      },
+      "cap": {
+       "amount": 50000,
+       "period": "year"
+      },
+      "note": "MBNA Rewards points · memberships and household utilities"
+     },
+     {
+      "card": "bmoEclipseRise",
+      "earn": {
+       "pointsPerDollar": 2.5,
+       "program": "bmoRewards"
+      },
+      "cap": {
+       "amount": 5000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "BMO Rewards points · 5 points per $2"
+     },
+     {
+      "card": "bmoCashBackMC",
+      "earn": {
+       "percent": 1
+      },
+      "cap": {
+       "amount": 500,
+       "period": "month"
+      },
+      "note": "0.5% base plus 0.5% bonus · per statement period"
+     },
+     {
+      "card": "nbWorldElite",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "alaCarte"
+      },
+      "note": "À la carte points · recurring bills"
+     },
+     {
+      "card": "desjardinsCashBackVisa",
+      "earn": {
+       "percent": 2
+      },
+      "cap": {
+       "amount": 3600,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Pre-authorized payments"
+     },
+     {
+      "card": "desjardinsCashBackMC",
+      "earn": {
+       "percent": 2
+      },
+      "cap": {
+       "amount": 3600,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Pre-authorized payments"
+     },
+     {
+      "card": "tdVisaInfinite",
+      "earn": {
+       "percent": 3
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Confirm in TD terms"
+     },
+     {
+      "card": "cibcDividendVI",
+      "earn": {
+       "percent": 2
+      }
+     },
+     {
+      "card": "cibcDividendPlatinum",
+      "earn": {
+       "percent": 2
+      }
+     },
+     {
+      "card": "simpliiVisa",
+      "earn": {
+       "percent": 1.5
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Pre-authorized payments"
+     },
+     {
+      "card": "tangerineMC",
+      "earn": {
+       "percent": 2
+      },
+      "chosen": "recurring-bills",
+      "note": "Your pick"
+     },
+     {
+      "card": "tangerineWorldMC",
+      "earn": {
+       "percent": 2
+      },
+      "chosen": "recurring-bills",
+      "note": "Your pick"
+     },
+     {
+      "card": "tangerineWE",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "scenePlus"
+      },
+      "chosen": "recurring-bills",
+      "note": "Scene+ points · your pick"
+     },
+     {
+      "card": "scotiaVI",
+      "earn": {
+       "percent": 4
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year",
+       "combined": true
+      }
+     },
+     {
+      "card": "bmoCashBackWE",
+      "earn": {
+       "percent": 2
+      },
+      "cap": {
+       "amount": 500,
+       "period": "month",
+       "combined": true
+      }
+     },
+     {
+      "card": "scotiaMomentum",
+      "earn": {
+       "percent": 2
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Confirm in Scotiabank terms"
+     },
+     {
+      "card": "scotiaMomentumNoFee",
+      "earn": {
+       "percent": 1
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year",
+       "combined": true
+      }
+     },
+     {
+      "card": "tdFirstClass",
+      "earn": {
+       "pointsPerDollar": 4,
+       "program": "tdRewards"
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "TD Rewards points · Confirm in TD terms"
+     },
+     {
+      "card": "tdCashBack",
+      "earn": {
+       "percent": 1
+      },
+      "cap": {
+       "amount": 5000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Confirm in TD terms"
+     },
+     {
+      "card": "cibcDividendVisa",
+      "earn": {
+       "percent": 1
+      }
+     },
+     {
+      "card": "bmoAscend",
+      "earn": {
+       "pointsPerDollar": 3,
+       "program": "bmoRewards"
+      },
+      "cap": {
+       "amount": 10000,
+       "period": "year"
+      },
+      "note": "BMO Rewards points"
+     },
+     {
+      "card": "tdRewardsVisa",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "tdRewards"
+      },
+      "cap": {
+       "amount": 5000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "TD Rewards points · Confirm in TD terms"
+     }
+    ]
+   },
+   {
+    "id": "streaming",
+    "name": "Streaming",
+    "offers": [
+     {
+      "card": "bmoEclipseRise",
+      "earn": {
+       "pointsPerDollar": 2.5,
+       "program": "bmoRewards"
+      },
+      "cap": {
+       "amount": 5000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "BMO Rewards points · 5 points per $2 · counts as recurring bills"
+     },
+     {
+      "card": "bmoCashBackWE",
+      "earn": {
+       "percent": 2
+      },
+      "cap": {
+       "amount": 500,
+       "period": "month",
+       "combined": true
+      },
+      "note": "Counts as recurring bills, shares their cap"
+     },
+     {
+      "card": "scotiaMomentum",
+      "earn": {
+       "percent": 2
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Confirm in Scotiabank terms"
+     },
+     {
+      "card": "scotiaMomentumNoFee",
+      "earn": {
+       "percent": 1
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year",
+       "combined": true
+      }
+     },
+     {
+      "card": "tdVisaInfinite",
+      "earn": {
+       "percent": 3
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Confirm in TD terms"
+     },
+     {
+      "card": "amexCobalt",
+      "earn": {
+       "pointsPerDollar": 3,
+       "program": "membershipRewards"
+      },
+      "note": "MR points · in Canada"
+     },
+     {
+      "card": "scotiaGoldAmex",
+      "earn": {
+       "pointsPerDollar": 3,
+       "program": "scenePlus"
+      },
+      "cap": {
+       "amount": 50000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Scene+ points · in Canada · Confirm in Scotiabank terms"
+     },
+     {
+      "card": "tdFirstClass",
+      "earn": {
+       "pointsPerDollar": 4,
+       "program": "tdRewards"
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "TD Rewards points · Confirm in TD terms"
+     },
+     {
+      "card": "tdCashBack",
+      "earn": {
+       "percent": 1
+      },
+      "cap": {
+       "amount": 5000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Confirm in TD terms"
+     },
+     {
+      "card": "rbcCashBackPreferred",
+      "earn": {
+       "percent": 3
+      },
+      "effectiveFrom": "2026-10-01"
+     },
+     {
+      "card": "rbcIonPlus",
+      "earn": {
+       "pointsPerDollar": 3,
+       "program": "avionPremium"
+      },
+      "note": "Avion Premium points"
+     },
+     {
+      "card": "rbcIon",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "avionPremium"
+      },
+      "note": "Avion Premium points"
+     },
+     {
+      "card": "mbnaWE",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "mbnaRewards"
+      },
+      "cap": {
+       "amount": 50000,
+       "period": "year"
+      },
+      "note": "MBNA Rewards points · digital media"
+     },
+     {
+      "card": "tdRewardsVisa",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "tdRewards"
+      },
+      "cap": {
+       "amount": 5000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "TD Rewards points · Confirm in TD terms"
+     }
+    ]
+   },
+   {
+    "id": "food-delivery",
+    "name": "Food delivery",
+    "offers": [
+     {
+      "card": "bmoEclipsePrivilege",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "bmoRewards"
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "BMO Rewards points · takeout, shares the dining cap"
+     },
+     {
+      "card": "bmoEclipseRise",
+      "earn": {
+       "pointsPerDollar": 2.5,
+       "program": "bmoRewards"
+      },
+      "cap": {
+       "amount": 5000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "BMO Rewards points · 5 points per $2 · shares the dining cap"
+     },
+     {
+      "card": "bmoEclipse",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "bmoRewards"
+      },
+      "cap": {
+       "amount": 6000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "BMO Rewards points · takeout and delivery, shares the dining cap"
+     },
+     {
+      "card": "amexCobalt",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "membershipRewards"
+      },
+      "cap": {
+       "amount": 2500,
+       "period": "month",
+       "combined": true
+      },
+      "note": "MR points · in Canada · then 1 pt/$1 · Confirm in Amex terms"
+     },
+     {
+      "card": "scotiaVI",
+      "earn": {
+       "percent": 2
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year",
+       "combined": true
+      }
+     },
+     {
+      "card": "amexPlatinum",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "membershipRewards"
+      },
+      "note": "MR points · in Canada"
+     },
+     {
+      "card": "amexAeroplan",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aeroplan"
+      },
+      "note": "Aeroplan points · in Canada"
+     },
+     {
+      "card": "amexAeroplanReserve",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "aeroplan"
+      },
+      "note": "Aeroplan points · in Canada"
+     },
+     {
+      "card": "scotiaGoldAmex",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "scenePlus"
+      },
+      "cap": {
+       "amount": 50000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Scene+ points · in Canada · Confirm in Scotiabank terms"
+     },
+     {
+      "card": "scotiaMomentum",
+      "earn": {
+       "percent": 2
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Confirm in Scotiabank terms"
+     },
+     {
+      "card": "scotiaMomentumNoFee",
+      "earn": {
+       "percent": 1
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year",
+       "combined": true
+      }
+     },
+     {
+      "card": "rbcCashBackPreferred",
+      "earn": {
+       "percent": 3
+      },
+      "effectiveFrom": "2026-10-01"
+     },
+     {
+      "card": "rbcIonPlus",
+      "earn": {
+       "pointsPerDollar": 3,
+       "program": "avionPremium"
+      },
+      "note": "Avion Premium points"
+     }
+    ]
+   },
+   {
+    "id": "gaming",
+    "name": "Digital gaming",
+    "offers": [
+     {
+      "card": "tangerineMC",
+      "earn": {
+       "percent": 2
+      },
+      "chosen": "gaming",
+      "note": "Your pick"
+     },
+     {
+      "card": "tangerineWorldMC",
+      "earn": {
+       "percent": 2
+      },
+      "chosen": "gaming",
+      "note": "Your pick"
+     },
+     {
+      "card": "tangerineWE",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "scenePlus"
+      },
+      "chosen": "gaming",
+      "note": "Scene+ points · your pick"
+     },
+     {
+      "card": "tdVisaInfinite",
+      "earn": {
+       "percent": 3
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Confirm in TD terms"
+     },
+     {
+      "card": "tdFirstClass",
+      "earn": {
+       "pointsPerDollar": 4,
+       "program": "tdRewards"
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "TD Rewards points · Confirm in TD terms"
+     },
+     {
+      "card": "tdCashBack",
+      "earn": {
+       "percent": 1
+      },
+      "cap": {
+       "amount": 5000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Confirm in TD terms"
+     },
+     {
+      "card": "tdRewardsVisa",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "tdRewards"
+      },
+      "cap": {
+       "amount": 5000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "TD Rewards points · Confirm in TD terms"
+     },
+     {
+      "card": "rbcCashBackPreferred",
+      "earn": {
+       "percent": 3
+      },
+      "effectiveFrom": "2026-10-01"
+     },
+     {
+      "card": "rbcIonPlus",
+      "earn": {
+       "pointsPerDollar": 3,
+       "program": "avionPremium"
+      },
+      "note": "Avion Premium points"
+     },
+     {
+      "card": "rbcIon",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "avionPremium"
+      },
+      "note": "Avion Premium points"
+     }
+    ]
+   },
+   {
+    "id": "drugstores",
+    "name": "Drugstores",
+    "offers": [
+     {
+      "card": "cibcAventuraVI",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aventura"
+      },
+      "note": "Aventura points"
+     },
+     {
+      "card": "cibcAventuraGold",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aventura"
+      },
+      "note": "Aventura points"
+     },
+     {
+      "card": "cibcAventura",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "aventura"
+      },
+      "note": "Aventura points"
+     },
+     {
+      "card": "scotiaMomentum",
+      "earn": {
+       "percent": 2
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Confirm in Scotiabank terms"
+     },
+     {
+      "card": "scotiaMomentumNoFee",
+      "earn": {
+       "percent": 1
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year",
+       "combined": true
+      }
+     },
+     {
+      "card": "amexGold",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "membershipRewards"
+      },
+      "note": "MR points · in Canada"
+     },
+     {
+      "card": "simpliiVisa",
+      "earn": {
+       "percent": 1.5
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year",
+       "combined": true
+      }
+     },
+     {
+      "card": "tangerineMC",
+      "earn": {
+       "percent": 2
+      },
+      "chosen": "drugstores",
+      "note": "Your pick"
+     },
+     {
+      "card": "tangerineWorldMC",
+      "earn": {
+       "percent": 2
+      },
+      "chosen": "drugstores",
+      "note": "Your pick"
+     },
+     {
+      "card": "tangerineWE",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "scenePlus"
+      },
+      "chosen": "drugstores",
+      "note": "Scene+ points · your pick"
+     },
+     {
+      "card": "bmoEclipsePrivilege",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "bmoRewards"
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year"
+      },
+      "note": "BMO Rewards points"
+     }
+    ]
+   },
+   {
+    "id": "shoppers",
+    "name": "Shoppers Drug Mart",
+    "offers": [
+     {
+      "card": "pcInsidersWE",
+      "earn": {
+       "pointsPerDollar": 50,
+       "program": "pcOptimum"
+      },
+      "note": "PC Optimum points"
+     },
+     {
+      "card": "pcWEMC",
+      "earn": {
+       "pointsPerDollar": 45,
+       "program": "pcOptimum"
+      },
+      "note": "PC Optimum points"
+     },
+     {
+      "card": "pcWorldMC",
+      "earn": {
+       "pointsPerDollar": 35,
+       "program": "pcOptimum"
+      },
+      "note": "PC Optimum points"
+     },
+     {
+      "card": "pcMC",
+      "earn": {
+       "pointsPerDollar": 25,
+       "program": "pcOptimum"
+      },
+      "note": "PC Optimum points"
+     },
+     {
+      "card": "cibcAventuraVI",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aventura"
+      },
+      "note": "Aventura points"
+     },
+     {
+      "card": "cibcAventuraGold",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aventura"
+      },
+      "note": "Aventura points"
+     },
+     {
+      "card": "cibcAventura",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "aventura"
+      },
+      "note": "Aventura points"
+     },
+     {
+      "card": "scotiaMomentum",
+      "earn": {
+       "percent": 2
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Confirm in Scotiabank terms"
+     },
+     {
+      "card": "scotiaMomentumNoFee",
+      "earn": {
+       "percent": 1
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year",
+       "combined": true
+      }
+     },
+     {
+      "card": "amexGold",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "membershipRewards"
+      },
+      "note": "MR points · in Canada"
+     },
+     {
+      "card": "simpliiVisa",
+      "earn": {
+       "percent": 1.5
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year",
+       "combined": true
+      }
+     },
+     {
+      "card": "tangerineMC",
+      "earn": {
+       "percent": 2
+      },
+      "chosen": "drugstores",
+      "note": "Your pick"
+     },
+     {
+      "card": "tangerineWorldMC",
+      "earn": {
+       "percent": 2
+      },
+      "chosen": "drugstores",
+      "note": "Your pick"
+     },
+     {
+      "card": "tangerineWE",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "scenePlus"
+      },
+      "chosen": "drugstores",
+      "note": "Scene+ points · your pick"
+     },
+     {
+      "card": "bmoEclipsePrivilege",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "bmoRewards"
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year"
+      },
+      "note": "BMO Rewards points"
+     },
+     {
+      "card": "tdCashBack",
+      "earn": {
+       "percent": 1
+      }
+     }
+    ]
+   },
+   {
+    "id": "travel",
+    "name": "Travel",
+    "offers": [
+     {
+      "card": "nbWorldElite",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "alaCarte"
+      },
+      "note": "À la carte points · À la carte travel"
+     },
+     {
+      "card": "bmoAscend",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "bmoRewards"
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year"
+      },
+      "note": "BMO Rewards points"
+     },
+     {
+      "card": "rbcAvionVI",
+      "earn": {
+       "pointsPerDollar": 1.25,
+       "program": "avionElite"
+      },
+      "note": "Avion Elite points"
+     },
+     {
+      "card": "amexGold",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "membershipRewards"
+      },
+      "note": "MR points · in Canada"
+     },
+     {
+      "card": "amexPlatinum",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "membershipRewards"
+      },
+      "note": "MR points"
+     },
+     {
+      "card": "tdAeroplanPrivilege",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aeroplan"
+      },
+      "cap": {
+       "amount": 100000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Aeroplan points · Confirm in TD terms"
+     },
+     {
+      "card": "bmoEclipsePrivilege",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "bmoRewards"
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year"
+      },
+      "note": "BMO Rewards points · air fare, hotel and car rental"
+     },
+     {
+      "card": "desjardinsOdysseyWE",
+      "earn": {
+       "percent": 2
+      },
+      "cap": {
+       "amount": 20000,
+       "period": "year"
+      }
+     },
+     {
+      "card": "desjardinsOdysseyVIP",
+      "earn": {
+       "percent": 3
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year"
+      }
+     }
+    ]
+   },
+   {
+    "id": "expedia-td",
+    "name": "Expedia for TD travel",
+    "offers": [
+     {
+      "card": "tdFirstClass",
+      "earn": {
+       "pointsPerDollar": 8,
+       "program": "tdRewards"
+      },
+      "note": "TD Rewards points · booked through Expedia for TD · Cap not confirmed"
+     },
+     {
+      "card": "tdRewardsVisa",
+      "earn": {
+       "pointsPerDollar": 4,
+       "program": "tdRewards"
+      },
+      "note": "TD Rewards points · booked through Expedia for TD · Cap not confirmed"
+     },
+     {
+      "card": "nbWorldElite",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "alaCarte"
+      },
+      "note": "À la carte points · À la carte travel"
+     },
+     {
+      "card": "bmoAscend",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "bmoRewards"
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year"
+      },
+      "note": "BMO Rewards points"
+     },
+     {
+      "card": "rbcAvionVI",
+      "earn": {
+       "pointsPerDollar": 1.25,
+       "program": "avionElite"
+      },
+      "note": "Avion Elite points"
+     },
+     {
+      "card": "amexGold",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "membershipRewards"
+      },
+      "note": "MR points · in Canada"
+     },
+     {
+      "card": "amexPlatinum",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "membershipRewards"
+      },
+      "note": "MR points"
+     },
+     {
+      "card": "tdAeroplanPrivilege",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aeroplan"
+      },
+      "cap": {
+       "amount": 100000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Aeroplan points · Confirm in TD terms"
+     },
+     {
+      "card": "bmoEclipsePrivilege",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "bmoRewards"
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year"
+      },
+      "note": "BMO Rewards points · air fare, hotel and car rental"
+     },
+     {
+      "card": "desjardinsOdysseyWE",
+      "earn": {
+       "percent": 2
+      },
+      "cap": {
+       "amount": 20000,
+       "period": "year"
+      }
+     },
+     {
+      "card": "desjardinsOdysseyVIP",
+      "earn": {
+       "percent": 3
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year"
+      }
+     }
+    ]
+   },
+   {
+    "id": "cibc-rewards-travel",
+    "name": "CIBC Rewards Centre / CIBC by Expedia travel",
+    "offers": [
+     {
+      "card": "cibcAventuraVI",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "aventura"
+      },
+      "note": "Aventura points · booked through CIBC Rewards Centre"
+     },
+     {
+      "card": "cibcAventuraGold",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "aventura"
+      },
+      "note": "Aventura points · booked through CIBC Rewards Centre"
+     },
+     {
+      "card": "cibcAventura",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "aventura"
+      },
+      "note": "Aventura points · booked through CIBC Rewards Centre"
+     },
+     {
+      "card": "cibcDividendVI",
+      "earn": {
+       "percent": 2
+      },
+      "note": "Booked through CIBC by Expedia"
+     },
+     {
+      "card": "cibcDividendPlatinum",
+      "earn": {
+       "percent": 2
+      },
+      "note": "Booked through CIBC by Expedia"
+     },
+     {
+      "card": "cibcDividendVisa",
+      "earn": {
+       "percent": 1
+      },
+      "note": "Booked through CIBC by Expedia"
+     },
+     {
+      "card": "nbWorldElite",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "alaCarte"
+      },
+      "note": "À la carte points · À la carte travel"
+     },
+     {
+      "card": "bmoAscend",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "bmoRewards"
+      },
+      "cap": {
+       "amount": 15000,
+       "period": "year"
+      },
+      "note": "BMO Rewards points"
+     },
+     {
+      "card": "rbcAvionVI",
+      "earn": {
+       "pointsPerDollar": 1.25,
+       "program": "avionElite"
+      },
+      "note": "Avion Elite points"
+     },
+     {
+      "card": "amexGold",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "membershipRewards"
+      },
+      "note": "MR points · in Canada"
+     },
+     {
+      "card": "amexPlatinum",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "membershipRewards"
+      },
+      "note": "MR points"
+     },
+     {
+      "card": "tdAeroplanPrivilege",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aeroplan"
+      },
+      "cap": {
+       "amount": 100000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Aeroplan points · Confirm in TD terms"
+     },
+     {
+      "card": "bmoEclipsePrivilege",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "bmoRewards"
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year"
+      },
+      "note": "BMO Rewards points · air fare, hotel and car rental"
+     },
+     {
+      "card": "desjardinsOdysseyWE",
+      "earn": {
+       "percent": 2
+      },
+      "cap": {
+       "amount": 20000,
+       "period": "year"
+      }
+     },
+     {
+      "card": "desjardinsOdysseyVIP",
+      "earn": {
+       "percent": 3
+      },
+      "cap": {
+       "amount": 25000,
+       "period": "year"
+      }
+     }
+    ]
+   },
+   {
+    "id": "air-canada",
+    "name": "Air Canada",
+    "offers": [
+     {
+      "card": "amexAeroplan",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "aeroplan"
+      },
+      "note": "Aeroplan points · includes Air Canada Vacations"
+     },
+     {
+      "card": "amexAeroplanReserve",
+      "earn": {
+       "pointsPerDollar": 3,
+       "program": "aeroplan"
+      },
+      "note": "Aeroplan points · includes Air Canada Vacations"
+     },
+     {
+      "card": "tdAeroplanVI",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aeroplan"
+      },
+      "cap": {
+       "amount": 80000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Aeroplan points"
+     },
+     {
+      "card": "tdAeroplanPrivilege",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "aeroplan"
+      },
+      "cap": {
+       "amount": 100000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Aeroplan points · Confirm in TD terms"
+     },
+     {
+      "card": "tdAeroplanPlatinum",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "aeroplan"
+      },
+      "cap": {
+       "amount": 80000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Aeroplan points · Confirm in TD terms"
+     },
+     {
+      "card": "cibcAeroplanVI",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aeroplan"
+      },
+      "note": "Aeroplan points · includes Air Canada Vacations"
+     },
+     {
+      "card": "cibcAeroplan",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "aeroplan"
+      },
+      "note": "Aeroplan points"
+     }
+    ]
+   },
+   {
+    "id": "marriott",
+    "name": "Marriott hotels",
+    "offers": [
+     {
+      "card": "amexMarriott",
+      "earn": {
+       "pointsPerDollar": 5,
+       "program": "marriottBonvoy"
+      },
+      "note": "Marriott Bonvoy points · at Marriott Bonvoy hotels"
+     }
+    ]
+   },
+   {
+    "id": "hyatt",
+    "name": "Hyatt hotels",
+    "offers": [
+     {
+      "card": "amexAeroplan",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aeroplan"
+      },
+      "note": "Aeroplan points · participating Hyatt hotels and resorts"
+     },
+     {
+      "card": "amexAeroplanReserve",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "aeroplan"
+      },
+      "note": "Aeroplan points · participating Hyatt hotels and resorts"
+     },
+     {
+      "card": "cibcAeroplanVI",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aeroplan"
+      },
+      "note": "Aeroplan points"
+     },
+     {
+      "card": "tdAeroplanVI",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "aeroplan"
+      },
+      "cap": {
+       "amount": 80000,
+       "period": "year"
+      },
+      "note": "Aeroplan points · Confirm in TD terms"
+     },
+     {
+      "card": "tdAeroplanPrivilege",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "aeroplan"
+      },
+      "cap": {
+       "amount": 100000,
+       "period": "year",
+       "combined": true
+      },
+      "note": "Aeroplan points · Confirm in TD terms"
+     }
+    ]
+   },
+   {
+    "id": "canadian-tire",
+    "name": "Canadian Tire stores",
+    "offers": [
+     {
+      "card": "triangleWEMC",
+      "earn": {
+       "percent": 4
+      },
+      "note": "CT Money"
+     },
+     {
+      "card": "triangleMC",
+      "earn": {
+       "percent": 4
+      },
+      "note": "CT Money"
+     }
+    ]
+   },
+   {
+    "id": "costco-online",
+    "name": "Costco.ca",
+    "offers": [
+     {
+      "card": "cibcCostcoMC",
+      "earn": {
+       "percent": 2
+      },
+      "note": "Cap: not stated on CIBC's page; check the card's terms"
+     }
+    ],
+    "acceptedNetworks": [
+     "Mastercard"
+    ],
+    "networkNote": "Costco only accepts Mastercard",
+    "shortNote": "Mastercard only",
+    "noAcceptedCardMessage": "No accepted card: Costco takes Mastercard and debit"
+   },
+   {
+    "id": "home-hardware",
+    "name": "Home Hardware",
+    "offers": [
+     {
+      "card": "tangerineMC",
+      "earn": {
+       "percent": 2
+      },
+      "chosen": "home-hardware",
+      "note": "Your pick"
+     },
+     {
+      "card": "tangerineWorldMC",
+      "earn": {
+       "percent": 2
+      },
+      "chosen": "home-hardware",
+      "note": "Your pick"
+     },
+     {
+      "card": "tangerineWE",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "scenePlus"
+      },
+      "chosen": "home-hardware",
+      "note": "Scene+ points · your pick"
+     },
+     {
+      "card": "sceneVisa",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "scenePlus"
+      },
+      "note": "Scene+ points"
+     }
+    ]
+   },
+   {
+    "id": "cineplex",
+    "name": "Cineplex",
+    "offers": [
+     {
+      "card": "sceneVisa",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "scenePlus"
+      },
+      "note": "Scene+ points"
+     }
+    ]
+   },
+   {
+    "id": "porter",
+    "name": "Porter Airlines",
+    "offers": [
+     {
+      "card": "bmoVIPorter",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "viporter"
+      },
+      "cap": {
+       "amount": 10000,
+       "period": "year"
+      },
+      "note": "VIPorter points · bought directly from Porter"
+     },
+     {
+      "card": "bmoVIPorterWorld",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "viporter"
+      },
+      "cap": {
+       "amount": 10000,
+       "period": "year"
+      },
+      "note": "VIPorter points · bought directly from Porter"
+     },
+     {
+      "card": "bmoVIPorterWE",
+      "earn": {
+       "pointsPerDollar": 3,
+       "program": "viporter"
+      },
+      "cap": {
+       "amount": 20000,
+       "period": "year"
+      },
+      "note": "VIPorter points · bought directly from Porter"
+     }
+    ]
+   },
+   {
+    "id": "amazon",
+    "name": "Amazon.ca",
+    "offers": [
+     {
+      "card": "mbnaAmazon",
+      "earn": {
+       "percent": 1.5
+      },
+      "note": "Includes Whole Foods Market in Canada"
+     },
+     {
+      "card": "mbnaAmazon",
+      "earn": {
+       "percent": 2.5
+      },
+      "requires": "prime",
+      "note": "Includes Whole Foods Market in Canada"
+     }
+    ]
+   },
+   {
+    "id": "rogers-bills",
+    "name": "Rogers, Fido & Shaw bills and online",
+    "offers": [
+     {
+      "card": "rogersWEMC",
+      "earn": {
+       "percent": 5
+      },
+      "cap": {
+       "amount": 61000,
+       "period": "year",
+       "basis": "total"
+      },
+      "note": "Applies to certain eligible Rogers purchases; see rogersbank.com/en/legal",
+      "effectiveFrom": "2026-11-18"
+     },
+     {
+      "card": "rogersRedWorldMC",
+      "earn": {
+       "percent": 5
+      },
+      "cap": {
+       "amount": 26000,
+       "period": "year",
+       "basis": "total"
+      },
+      "note": "Applies to certain eligible Rogers purchases; see rogersbank.com/en/legal",
+      "effectiveFrom": "2026-11-18"
+     },
+     {
+      "card": "rogersRedMC",
+      "earn": {
+       "percent": 5
+      },
+      "cap": {
+       "amount": 16000,
+       "period": "year",
+       "basis": "total"
+      },
+      "note": "Applies to certain eligible Rogers purchases; see rogersbank.com/en/legal",
+      "effectiveFrom": "2026-11-18"
+     },
+     {
+      "card": "rogersRedWorldLegendMC",
+      "earn": {
+       "percent": 5
+      },
+      "note": "Applies to certain eligible Rogers purchases; see rogersbank.com/en/legal · Annual limit: Not confirmed",
+      "effectiveFrom": "2026-11-18"
+     }
+    ]
+   },
+   {
+    "id": "abroad",
+    "name": "Shopping outside Canada",
+    "foreignFees": true,
+    "offers": [
+     {
+      "card": "mbnaAmazon",
+      "earn": {
+       "percent": 1
+      },
+      "note": "Cash back on foreign currency purchases"
+     },
+     {
+      "card": "mbnaAmazon",
+      "earn": {
+       "percent": 2.5
+      },
+      "requires": "prime"
+     },
+     {
+      "card": "rogersRedMC",
+      "earn": {
+       "percent": 2
+      },
+      "note": "U.S. dollar purchases only"
+     },
+     {
+      "card": "rogersRedWorldMC",
+      "earn": {
+       "percent": 2
+      },
+      "note": "U.S. dollar purchases only"
+     },
+     {
+      "card": "tangerineMC",
+      "earn": {
+       "percent": 2
+      },
+      "chosen": "abroad",
+      "note": "Your pick"
+     },
+     {
+      "card": "tangerineWorldMC",
+      "earn": {
+       "percent": 2
+      },
+      "chosen": "abroad",
+      "note": "Your pick"
+     },
+     {
+      "card": "tangerineWE",
+      "earn": {
+       "pointsPerDollar": 1.5,
+       "program": "scenePlus"
+      },
+      "chosen": "abroad",
+      "note": "Scene+ points · your pick"
+     },
+     {
+      "card": "rogersWEMC",
+      "earn": {
+       "percent": 3
+      },
+      "note": "3% applies to U.S. dollar purchases only"
+     }
+    ],
+    "networkNote": "Rate shown is after the foreign transaction fee",
+    "shortNote": "After foreign transaction fee"
+   },
+   {
+    "id": "costco",
+    "name": "Costco warehouse",
+    "offers": [
+     {
+      "card": "bmoBlueRewards",
+      "earn": {
+       "pointsPerDollar": 1,
+       "program": "blueRewards"
+      },
+      "cap": {
+       "amount": 500,
+       "period": "month"
+      },
+      "note": "Blue Points · wholesale clubs"
+     },
+     {
+      "card": "bmoBlueRewardsWE",
+      "earn": {
+       "pointsPerDollar": 2,
+       "program": "blueRewards"
+      },
+      "cap": {
+       "amount": 500,
+       "period": "month"
+      },
+      "note": "Blue Points · wholesale clubs"
+     }
+    ],
+    "acceptedNetworks": [
+     "Mastercard"
+    ],
+    "networkNote": "Costco only accepts Mastercard",
+    "shortNote": "Mastercard only",
+    "noAcceptedCardMessage": "No accepted card: Costco takes Mastercard and debit"
+   },
+   {
+    "id": "everyday-shopping",
+    "name": "Everyday shopping",
+    "offers": []
+   },
+   {
+    "id": "everything-else",
+    "name": "Everything else",
+    "offers": []
+   }
+  ]
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "entries": [
+  {
+   "dataVersion": 1,
+   "publishedAt": "2026-10-17T00:00:00Z",
+   "description": "First publish: same data as the app (v1.0.0)",
+   "kind": "initial",
+   "checksum": "sha256:6931900c710f6198e7db0862e3b3a9a487a0cbfe00cecf00ae9a156dee5256a9",
+   "changes": [],
+   "cardsChanged": []
+  }
+ ]
+}
